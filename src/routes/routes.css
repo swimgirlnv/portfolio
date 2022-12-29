@@ -1,0 +1,47 @@
+.explainer-page {
+  background-image: linear-gradient(rgb(109,247,255), #000081 );
+  width: 100%;
+  
+  color: black;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  padding: 20px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 70px;
+  
+}
+
+.part {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.button {
+  color: black;
+  padding: 20px;
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-size: large;
+}
+
+.hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  background-color: black;
+  border: none;
+}
