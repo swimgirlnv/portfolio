@@ -18,14 +18,14 @@ function App () {
     <>
      <Router>
          <Routes>
-           <Route path="/" element={<Home />} />
-           <Route path="personas" element={<Personas />} />
-           <Route path="responsive" element={<Responsive />} />
-           <Route path="iterative" element={<Iterative /> } />
-           <Route path="development" element={<Development />} />
-           <Route path="arcana" element={<Arcana />} />
-           <Route path="location" element={<Location />} />
-           <Route path="list" element={<List />} />
+           <Route path="/portfolio/" element={<Home />} />
+           <Route path="/portfolio/personas" element={<Personas />} />
+           <Route path="/portfolio/responsive" element={<Responsive />} />
+           <Route path="/portfolio/iterative" element={<Iterative /> } />
+           <Route path="/portfolio/development" element={<Development />} />
+           <Route path="/portfolio/arcana" element={<Arcana />} />
+           <Route path="/portfolio/location" element={<Location />} />
+           <Route path="/portfolio/list" element={<List />} />
          </Routes>
      </Router>
      </>

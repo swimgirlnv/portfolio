@@ -56,7 +56,7 @@ function Home() {
           <div className="item1">
           <div className="left-side-item1">
             <div className="card">
-              <a href="/Personas">
+              <a href="/portfolio/Personas">
                 <img className="screenshots"
                 alt="Sketch of user holding dirty laundry." 
                 src="https://i.imgur.com/5yV8LAU.png">
@@ -130,7 +130,7 @@ function Home() {
             <div className="right-side-item2">
               <div className="card">
                 <a id="redesigned-website"
-                  href="/Responsive">
+                  href="/portfolio/Responsive">
                     <img className="screenshots" 
                     src="https://i.imgur.com/GqtZ1KJ.png"
                     alt="Washoe County Library System logo"></img>
@@ -142,7 +142,7 @@ function Home() {
           <div className="item3">
           <div className="left-side-item3"  id="IterativeDesign">
             <div className="card">
-              <a href="/Iterative">
+              <a href="/portfolio/Iterative">
                 <img className="screenshots" 
                 src="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
                 alt="Dr. Treat logo"></img>
@@ -193,7 +193,7 @@ function Home() {
             <div className="left-item4">
               <div className="top-item4">
                 <div className="card">
-                  <a href="/Development">
+                  <a href="/portfolio/Development">
                     <img className="screenshots" 
                     src="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
                     alt="Club penguin mascot holding a pizza."></img>
@@ -212,7 +212,7 @@ function Home() {
                   <p>A Literary Arts project that aimed to allow readers to follow the links on the maps to read a single "myth" attached to a specific location.</p>
                 </div>
                 <div className="card">
-                  <a href="/Location">
+                  <a href="/portfolio/Location">
                     <img className="screenshots" src="https://i.imgur.com/Spo00wU.jpg"
                     alt="Simple image of a compass."></img>
                   </a>
@@ -222,7 +222,7 @@ function Home() {
             <div className="right-item4">
               <div className="top-item4">
                 <div className="card">
-                  <a href="/Arcana">
+                  <a href="/portfolio/Arcana">
                     <img className="screenshots" src="https://i.imgur.com/5hzflr1.png"
                     alt="Major Arcana Logo"></img>
                   </a>
@@ -240,7 +240,7 @@ function Home() {
                   <p>A Literary Arts project that used Figma to allow users to interact with the story and piece it together as they read.</p>
                 </div>
                 <div className="card">
-                  <a href="/List">
+                  <a href="/portfolio/List">
                     <img className="screenshots" 
                     src="https://i.imgur.com/6Ge9YBY.png"
                     alt="Screenshot of part of the Figma page from the Lists Project"></img>

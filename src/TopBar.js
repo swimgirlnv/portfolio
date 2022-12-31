@@ -3,10 +3,10 @@ import './App.css'
 function TopBar () {
   return (
     <div className="top-bar" id="navbar">
-        <a className="navbar-first" href="/"><strong>Final Portfolio</strong></a>
-        <a href="/#About">About</a>
+        <a className="navbar-first" href="/portfolio"><strong>Final Portfolio</strong></a>
+        <a href="/portfolio/#About">About</a>
         <div className="separator"></div>
-        <a className="navbar-last" href="#Projects">Projects</a>
+        <a className="navbar-last" href="/portfolio/#Projects">Projects</a>
     </div>
   );
 }
