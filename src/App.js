@@ -19,13 +19,13 @@ function App () {
      <Router>
          <Routes>
            <Route path="/portfolio/" element={<Home />} />
-           <Route path="/portfolio/personas" element={<Personas />} />
-           <Route path="/portfolio/responsive" element={<Responsive />} />
-           <Route path="/portfolio/iterative" element={<Iterative /> } />
-           <Route path="/portfolio/development" element={<Development />} />
-           <Route path="/portfolio/arcana" element={<Arcana />} />
-           <Route path="/portfolio/location" element={<Location />} />
-           <Route path="/portfolio/list" element={<List />} />
+           <Route path="/portfolio/Personas" element={<Personas />} />
+           <Route path="/portfolio/Responsive" element={<Responsive />} />
+           <Route path="/portfolio/Iterative" element={<Iterative /> } />
+           <Route path="/portfolio/Development" element={<Development />} />
+           <Route path="/portfolio/Arcana" element={<Arcana />} />
+           <Route path="/portfolio/Location" element={<Location />} />
+           <Route path="/portfolio/List" element={<List />} />
          </Routes>
      </Router>
      </>
