@@ -57,7 +57,7 @@ function Personas () {
         <a href='https://drowningdolphin123.github.io/p-and-s2/index.html' target='blank'>
           <button className='button'>Explore Project Website</button>
         </a>
-        <a href='/portfolio'>
+        <a href='/'>
           <button className='button'>Return to Home Page</button>
         </a>
       </div>

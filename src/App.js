@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,
+import { HashRouter,
   Routes,
   Route
 } from 'react-router-dom';
@@ -16,18 +16,16 @@ import List from './routes/List';
 function App () {
   return (
     <>
-     <Router>
          <Routes>
-           <Route path="/portfolio/" element={<Home />} />
-           <Route path="/portfolio/Personas" element={<Personas />} />
-           <Route path="/portfolio/Responsive" element={<Responsive />} />
-           <Route path="/portfolio/Iterative" element={<Iterative /> } />
-           <Route path="/portfolio/Development" element={<Development />} />
-           <Route path="/portfolio/Arcana" element={<Arcana />} />
-           <Route path="/portfolio/Location" element={<Location />} />
-           <Route path="/portfolio/List" element={<List />} />
+           <Route path="/" element={<Home />} />
+           <Route path="/Personas" element={<Personas />} />
+           <Route path="/Responsive" element={<Responsive />} />
+           <Route path="/Iterative" element={<Iterative /> } />
+           <Route path="/Development" element={<Development />} />
+           <Route path="/Arcana" element={<Arcana />} />
+           <Route path="/Location" element={<Location />} />
+           <Route path="/List" element={<List />} />
          </Routes>
-     </Router>
      </>
     );
 }

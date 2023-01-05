@@ -2,6 +2,7 @@ import "./App.css";
 import Bubbles from './Bubbles';
 import TopBar from "./TopBar";
 import Footer from './Footer';
+import { Link } from "react-router-dom";
 
 function Home() {
   
@@ -56,12 +57,12 @@ function Home() {
           <div className="item1">
           <div className="left-side-item1">
             <div className="card">
-              <a href="/portfolio/Personas">
+              <Link to="/Personas">
                 <img className="screenshots"
                 alt="Sketch of user holding dirty laundry." 
                 src="https://i.imgur.com/5yV8LAU.png">
                 </img>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="center-item1">
@@ -129,12 +130,12 @@ function Home() {
             </div>
             <div className="right-side-item2">
               <div className="card">
-                <a id="redesigned-website"
-                  href="/portfolio/Responsive">
+                <Link
+                  to="/Responsive">
                     <img className="screenshots" 
                     src="https://i.imgur.com/GqtZ1KJ.png"
                     alt="Washoe County Library System logo"></img>
-                </a>
+                </Link>
               </div>
             </div>
             </div>
@@ -142,11 +143,11 @@ function Home() {
           <div className="item3">
           <div className="left-side-item3"  id="IterativeDesign">
             <div className="card">
-              <a href="/portfolio/Iterative">
+              <Link to="/Iterative">
                 <img className="screenshots" 
                 src="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
                 alt="Dr. Treat logo"></img>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="center-item3">
@@ -193,11 +194,11 @@ function Home() {
             <div className="left-item4">
               <div className="top-item4">
                 <div className="card">
-                  <a href="/portfolio/Development">
+                  <Link to="/Development">
                     <img className="screenshots" 
                     src="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
                     alt="Club penguin mascot holding a pizza."></img>
-                  </a>
+                  </Link>
                 </div>
                 <div className="item4-content">
                   <h3><b>Development</b></h3>
@@ -212,20 +213,20 @@ function Home() {
                   <p>A Literary Arts project that aimed to allow readers to follow the links on the maps to read a single "myth" attached to a specific location.</p>
                 </div>
                 <div className="card">
-                  <a href="/portfolio/Location">
+                  <Link to="/Location">
                     <img className="screenshots" src="https://i.imgur.com/Spo00wU.jpg"
                     alt="Simple image of a compass."></img>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="right-item4">
               <div className="top-item4">
                 <div className="card">
-                  <a href="/portfolio/Arcana">
+                  <Link to="/Arcana">
                     <img className="screenshots" src="https://i.imgur.com/5hzflr1.png"
                     alt="Major Arcana Logo"></img>
-                  </a>
+                  </Link>
                 </div>
                 <div className="item4-content">
                   <h3><b>Major Arcana</b></h3>
@@ -240,11 +241,11 @@ function Home() {
                   <p>A Literary Arts project that used Figma to allow users to interact with the story and piece it together as they read.</p>
                 </div>
                 <div className="card">
-                  <a href="/portfolio/List">
+                  <Link to="/List">
                     <img className="screenshots" 
                     src="https://i.imgur.com/6Ge9YBY.png"
                     alt="Screenshot of part of the Figma page from the Lists Project"></img>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

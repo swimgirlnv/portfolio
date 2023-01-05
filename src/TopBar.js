@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import './App.css'
 
 function TopBar () {
   return (
     <div className="top-bar" id="navbar">
-        <a className="navbar-first" href="/portfolio"><strong>Final Portfolio</strong></a>
-        <a href="/portfolio/#About">About</a>
+        <Link className="navbar-first" to="/"><strong>Final Portfolio</strong></Link>
+        <Link to="#About">About</Link>
         <div className="separator"></div>
-        <a className="navbar-last" href="/portfolio/#Projects">Projects</a>
+        <Link className="navbar-last" to="#Projects">Projects</Link>
     </div>
   );
 }
