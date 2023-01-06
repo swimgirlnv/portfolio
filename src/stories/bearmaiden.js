@@ -61,6 +61,7 @@ function BearMaiden() {
       as its big paw with its long claws went to scratch behind its little ear. If so scary, why were the ears 
       so cute? It turned to face the telescope, it’s eyes gleaming in the moonlight. She wondered if it liked dog treats.
       </p>
+      <br></br>
       <p>
       She pulled away from the socket, and the wind that had been hiding sought its sudden escape into the night. 
       The creature snuffled, it smelled the Old Spice Pure Sport shirt. It extended to its full height, reaching 

@@ -29,6 +29,7 @@ function Clark() {
       <p>
       She swirls her fingers slowly, teasing the dust to life. The past and the present blur and then melt together, old and new fur together, some long gone or recently gone at present, some not yet existing in past. Dogs had always been in her life but now seeing the short black wavy strands lazily sailing on glowing drafts of snowy morning air, mingling with the long, fine, white hairs and coarser yellow hairs as the invisible dance of static electricity waltzed through the currents, she couldn’t help but wish that the dogs were never there at all.
       </p>
+      <br></br>
       <p>
       In this false reality, unreal memory, fevered daydream, she could hear him still, feel his little paw with the nails just a bit too sharp digging into her forearm as he begged her to pet him. The way his ears cocked and his head tilted when you said t-r-e-a-t or d-i-n-n-e-r or w-a-l-k or c-l-a-r-k because he was smart and could read your intentions and she always had to spell those words out otherwise he’d go bonkers jumping up and down and causing all that gorgeous dust and fur trapped in that portion of sun to run scrambling into the heavens.
       </p>
