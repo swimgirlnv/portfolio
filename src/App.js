@@ -16,6 +16,9 @@ import BearMaiden from './stories/bearmaiden';
 import Dual from './stories/dual';
 import Landscape from './stories/landscape';
 import Clark from './stories/clark';
+import Butterfly from './stories/butterfly';
+import Kin from './stories/kin';
+import Worm from './stories/worm';
 
 function App () {
   return (
@@ -33,6 +36,9 @@ function App () {
            <Route path="/Dual" element={<Dual />} />
            <Route path='/Landscape' element={<Landscape />} />
            <Route path='/Clark' element={<Clark />} />
+           <Route path='/Butterfly' element={<Butterfly />} />
+           <Route path='/Kin' element={<Kin />} />
+           <Route path='/Worm' element={<Worm />} />
          </Routes>
      </>
     );

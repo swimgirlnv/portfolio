@@ -118,7 +118,15 @@ function BearMaiden() {
       and then it fluttered out into the day, leaving behind the scent of Old Spice Pure Sport.
       </p>
       </div>
+
+      <div className='return'>
+      <a href='#/Stories'>
+        <button className='button'>Return to Stories</button>
+      </a>
       </div>
+
+      </div>
+    
       <Footer />
     </div>
   );

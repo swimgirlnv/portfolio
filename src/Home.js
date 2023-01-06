@@ -18,9 +18,9 @@ function Home() {
             <div>
               <p className="andale">Hello World!</p> 
               <br></br>
-              <p>I am a student of Brown University and member of the Fall 2022 CSCI 1300 UI/UX course.</p>
+              <p>I am currently a Junior at Brown University and pursuing a double concentration in Computer Science and Literary Arts.</p>
               <br></br>
-              <p>Scroll to learn more about me and to explore what I've created this semester! (Including my collection of alligator drawings :D)</p>
+              <p>Scroll to learn more about me and to explore what I've created during my time at Brown! (Including my collection of alligator drawings :D)</p>
             </div>
           </div>
           <div className="right-side-intro">
@@ -32,6 +32,7 @@ function Home() {
         </div>
 
         <div className="about" id="About">
+          
           <div className="about-content">
             <h3><b>About</b></h3>
             <br></br>
@@ -46,21 +47,26 @@ function Home() {
             </p>
             <br></br>
             <p> 
-              Especially with this
-              UI/UX course, I've learned more about creating a narrative and mapping out a user experience as one might read a story.
+              Especially in the CSCI 1300 course for UI/UX (where this portfolio was born as my final project!), 
+              I feel I've learned more about creating a narrative and mapping out a user experience as one might read a story.
             </p>
+            <br></br>
             <div className="icons">
-              <a href="https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/" target="blank">
-                <img src="https://i.imgur.com/LzinyKk.png" width="30px"></img>
-              </a>
-              <a href="https://www.instagram.com/thesketchy.sketches/" target="blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="30px"></img>
-              </a>
-            </div>
+              <div className="icon">
+                <a href="https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/" target="blank">
+                  <img src="https://i.imgur.com/LzinyKk.png" width="20px"></img>
+                </a>
+              </div>
+              <div className="icon">
+                <a href="https://www.instagram.com/thesketchy.sketches/" target="blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="20px"></img>
+                </a>
+              </div>
+            </div>         
           </div>
-          <Bubbles />
+          
         </div>
-
+        
         <div className="grid-container" id="Projects">
           <div className="item1">
           <div className="left-side-item1">

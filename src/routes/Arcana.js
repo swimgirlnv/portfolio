@@ -1,5 +1,7 @@
 import TopBar from '../TopBar';
 import './routes.css';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 function Arcana () {
   return(
@@ -34,9 +36,9 @@ function Arcana () {
       <a href='https://majorarcana.net/' target='blank'>
         <button className='button'>Explore Project Website</button>
       </a>
-      <a href='/'>
-        <button className='button'>Return to Home Page</button>
-      </a>
+      <Link to='/#Projects'>
+          <button className='button'>Return to Projects</button>
+      </Link>
     </div>
     </div>
     <div className="footer2">

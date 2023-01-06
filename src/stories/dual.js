@@ -182,6 +182,11 @@ function Dual() {
         “YEAH!” Otto howls punching the air with his stopwatch. The Einherjar may have lost each previous heat, but Embla had saved them all.
         </p>
       </div>
+      <div className='return'>
+      <a href='#/Stories'>
+        <button className='button'>Return to Stories</button>
+      </a>
+      </div>
       </div>
       <Footer />
     </div>

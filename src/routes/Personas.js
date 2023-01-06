@@ -1,5 +1,7 @@
 import './routes.css';
 import TopBar from '../TopBar';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Footer from '../Footer';
 
 function Personas () {
@@ -9,8 +11,9 @@ function Personas () {
       <br></br>
       <br></br>
       <br></br>
-      
+
       <div className='content-container'>
+        <div className='anothercontainer'>
 
       <div className='content'>
       <h1 className="title">Personas and Storyboarding</h1>
@@ -60,14 +63,13 @@ function Personas () {
         <a href='https://drowningdolphin123.github.io/p-and-s2/index.html' target='blank'>
           <button className='button'>Explore Project Website</button>
         </a>
-        <a href='/'>
-          <button className='button'>Return to Home Page</button>
-        </a>
+        <Link to='/#Projects'>
+          <button className='button'>Return to Projects</button>
+        </Link>
       </div>
       </div>
-      <div className="footer2">
-        <p>Made with love in Providence</p>
       </div>
+      <Footer />
     </div>
   );
 }

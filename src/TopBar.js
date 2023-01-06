@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './App.css'
 
 function TopBar () {
   return (
     <div className="top-bar" id="navbar">
         <Link className="navbar-first" to="/"><strong>Final Portfolio</strong></Link>
-        <a href="#About">About</a>
+        <Link to="/#About">About</Link>
         <div className="separator"></div>
-        <a href="#Projects">Projects</a>
+        <Link to="/#Projects">Projects</Link>
         <div className="separator"></div>
         <Link className="navbar-last" to="/Stories">Stories</Link>
     </div>

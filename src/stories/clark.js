@@ -10,6 +10,7 @@ function Clark() {
       <br className="break"></br>
       <br className="break"></br>
       <br className="break"></br>
+      <div className='anothaone'>
 <div className='story-container'>
       <div className="story">
       <h3>Re Memory</h3>
@@ -44,6 +45,12 @@ function Clark() {
       <br></br>
       <div className='imgs'>
         <img src="https://i.imgur.com/sIb0gaZ.jpg" width="100%"></img>
+      </div>
+      </div>
+      <div className='return'>
+      <a href='#/Stories'>
+        <button className='button'>Return to Stories</button>
+      </a>
       </div>
       </div>
       </div>

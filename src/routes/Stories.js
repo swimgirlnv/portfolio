@@ -8,6 +8,10 @@ function Stories () {
   return(
     <div className="explainer-page">
       <TopBar />
+      <br></br>
+      <br></br>
+      <br></br>
+
       <div className='content-container'>
         <div className='content2'>
           <Link to="/Dual">
@@ -39,6 +43,30 @@ function Stories () {
               <h3>Re Memory</h3>
               <p>
                 Inspired by the sweetest friend anyone could ever ask for.
+              </p>
+            </div>
+          </Link>
+          <Link to='/Butterfly'>
+            <div className='content3'>
+              <h3>Butterfly</h3>
+              <p>
+                A bus ride caught between different slices of time.
+              </p>
+            </div>
+          </Link>
+          <Link to='/Kin'>
+            <div className='content3'>
+              <h3>Kin</h3>
+              <p>
+              An adaption of the myth my own mother told me when I was younger.
+              </p>
+            </div>
+          </Link>
+          <Link to='/Worm'>
+            <div className='content3'>
+              <h3>Worm Questions</h3>
+              <p>
+              A silly assignment done with the gracious collaboration of a lovely computer science neighbor.
               </p>
             </div>
           </Link>
