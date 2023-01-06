@@ -15,7 +15,7 @@ function BearMaiden() {
       <h3>The Bear and the Maiden Fair</h3>
       <br></br>
       <div className='imgs'>
-        <img src="https://i.imgur.com/AtaJVOv.png" width="600px"></img>
+        <img src="https://i.imgur.com/AtaJVOv.png" width="100%"></img>
       </div>
       <br></br>
       <p>

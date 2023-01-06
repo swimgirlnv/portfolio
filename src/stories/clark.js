@@ -43,7 +43,7 @@ function Clark() {
       </p>
       <br></br>
       <div className='imgs'>
-        <img src="https://i.imgur.com/sIb0gaZ.jpg" width="600px"></img>
+        <img src="https://i.imgur.com/sIb0gaZ.jpg" width="100%"></img>
       </div>
       </div>
       </div>
