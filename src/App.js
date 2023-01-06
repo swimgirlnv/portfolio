@@ -17,6 +17,7 @@ import Stories from './routes/Stories';
 import BearMaiden from './stories/bearmaiden';
 import Dual from './stories/dual';
 import Landscape from './stories/landscape';
+import Clark from './stories/clark';
 
 function App () {
   return (
@@ -35,6 +36,7 @@ function App () {
            <Route path="/BearMaiden" element={<BearMaiden />} />
            <Route path="/Dual" element={<Dual />} />
            <Route path='/Landscape' element={<Landscape />} />
+           <Route path='/Clark' element={<Clark />} />
          </Routes>
      </>
     );

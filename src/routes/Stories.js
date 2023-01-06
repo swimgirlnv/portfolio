@@ -34,6 +34,14 @@ function Stories () {
               </p>
             </div>
           </Link>
+          <Link to='/Clark'>
+            <div className='content3'>
+              <h3>Re Memory</h3>
+              <p>
+                Inspired by the sweetest friend anyone could ever ask for.
+              </p>
+            </div>
+          </Link>
           <div className='content3'>
             <h3>Publications</h3>
             <div className='imgs'>
