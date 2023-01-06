@@ -62,7 +62,7 @@ function Personas () {
         </a>
       </div>
       </div>
-      <div className="footer">
+      <div className="footer2">
         <p>Made with love in Providence</p>
       </div>
     </div>

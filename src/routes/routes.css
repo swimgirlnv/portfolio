@@ -46,8 +46,10 @@
   border: none;
 }
 
-.footer {
+.footer2 {
   margin: 0px;
+  display: flex;
+  justify-content: center;
   background-color: #000081;
   height: 30px;
   color: white;
