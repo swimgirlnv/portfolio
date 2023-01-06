@@ -221,10 +221,10 @@ function Home() {
                   <p>A Literary Arts project that aimed to allow readers to follow the links on the maps to read a single "myth" attached to a specific location.</p>
                 </div>
                 <div className="card">
-                  <Link to="/Location">
+                  <a href="https://swimgirlnv.github.io/litr-210-final/" target="blank">
                     <img className="screenshots" src="https://i.imgur.com/Spo00wU.jpg"
                     alt="Simple image of a compass."></img>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -249,11 +249,11 @@ function Home() {
                   <p>A Literary Arts project that used Figma to allow users to interact with the story and piece it together as they read.</p>
                 </div>
                 <div className="card">
-                  <Link to="/List">
+                  <a href="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545" target="blank">
                     <img className="screenshots" 
                     src="https://i.imgur.com/6Ge9YBY.png"
                     alt="Screenshot of part of the Figma page from the Lists Project"></img>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

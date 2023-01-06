@@ -10,8 +10,6 @@ import Responsive from './routes/Responsive';
 import Iterative from './routes/Iterative';
 import Development from './routes/Development';
 import Arcana from './routes/Arcana';
-import Location from './routes/Location';
-import List from './routes/List';
 import Stories from './routes/Stories';
 
 import BearMaiden from './stories/bearmaiden';
@@ -29,8 +27,6 @@ function App () {
            <Route path="/Iterative" element={<Iterative /> } />
            <Route path="/Development" element={<Development />} />
            <Route path="/Arcana" element={<Arcana />} />
-           <Route path="/Location" element={<Location />} />
-           <Route path="/List" element={<List />} />
            <Route path="/Stories" element={<Stories />} />
 
            <Route path="/BearMaiden" element={<BearMaiden />} />
