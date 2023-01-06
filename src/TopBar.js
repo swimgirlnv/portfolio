@@ -5,9 +5,11 @@ function TopBar () {
   return (
     <div className="top-bar" id="navbar">
         <Link className="navbar-first" to="/"><strong>Final Portfolio</strong></Link>
-        <Link to="#About">About</Link>
+        <a href="#About">About</a>
         <div className="separator"></div>
-        <Link className="navbar-last" to="#Projects">Projects</Link>
+        <a href="#Projects">Projects</a>
+        <div className="separator"></div>
+        <Link className="navbar-last" to="/Stories">Stories</Link>
     </div>
   );
 }

@@ -12,6 +12,11 @@ import Development from './routes/Development';
 import Arcana from './routes/Arcana';
 import Location from './routes/Location';
 import List from './routes/List';
+import Stories from './routes/Stories';
+
+import BearMaiden from './stories/bearmaiden';
+import Dual from './stories/dual';
+import Landscape from './stories/landscape';
 
 function App () {
   return (
@@ -25,6 +30,11 @@ function App () {
            <Route path="/Arcana" element={<Arcana />} />
            <Route path="/Location" element={<Location />} />
            <Route path="/List" element={<List />} />
+           <Route path="/Stories" element={<Stories />} />
+
+           <Route path="/BearMaiden" element={<BearMaiden />} />
+           <Route path="/Dual" element={<Dual />} />
+           <Route path='/Landscape' element={<Landscape />} />
          </Routes>
      </>
     );
