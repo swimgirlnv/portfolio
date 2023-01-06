@@ -16,17 +16,25 @@ function Arcana () {
 
     <div className='content'>
     <h1 className="title">Major Arcana</h1>
-
+    <hr className='hr'></hr>
     <div className='part'>
-      <h3>Identifying Usability Problems</h3>
-      <hr className='hr'></hr>
       <p>
-      Over the 2022 summer I lived at home in Incline Village. Still used to the college lifestyle of working
-      in a library, I attempted to navigate the Washoe County Library System website to find open hours for
-      the local library. Frustrated and confused, I ended up spending most of my time working at home. When this 
-      project was released, I knew exactly which website I wanted to redesign, and narrowed it down to the home page
-      of the Incline Village Library. Using my own experience with the website and <a href="https://wave.webaim.org/">WebAIM WAVE</a> I 
-      identified accesibility and user issues that could be improved.
+      June 2022, fresh out of CSCI 32 "Introduction to Software Engineering", I wanted to build off of my final project and make some type of game
+      for myself. But what about? After buying my tenth set of Tarot Cards, I realized that I wanted to make an application that could quickly give you a tarot 
+      reading. Although part of the fun of Tarot is certainly the shuffling cards and mindfully considering what each card means within a spread, I wanted
+      to create something for the modern mystic who didn't have the time to sit down and devote an hour or more to the full Tarot experience.
+      </p>
+      <br></br>
+      <p>
+        Thus, "Major Arcana" was born! Originally just an application that would reveal a certain number of tarot cards and tell you the generic 
+       upright and reverse meanings, it has since grown to include the GPT3 API that sends information about the specific spread and cards picked and returns
+       a concise interpretation of the Tarot spread.
+      </p>
+      <br></br>
+      <p>
+        Major Arcana is still a work in progress and there a many features that I am still working on implementing, including readings with reversed cards, as well
+        as including more tarot spreads and creating a journal element that allows users to both save the spread/interprestation combo and write about
+        their Tarot experience. Overall, Major Arcana is a culmination of my computer science skills gained at Brown.
       </p>
     </div>
 

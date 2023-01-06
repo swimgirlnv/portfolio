@@ -47,7 +47,7 @@ function Home() {
             </p>
             <br></br>
             <p> 
-              Especially in the CSCI 1300 course for UI/UX (where this portfolio was born as my final project!), 
+              Especially in the CSCI 1300 course for UI/UX (where this portfolio was born as my final project, check out the OG <a href="https://drowningdolphin123.github.io/final-portfolio/" target="blank">here</a>!), 
               I feel I've learned more about creating a narrative and mapping out a user experience as one might read a story.
             </p>
             <br></br>

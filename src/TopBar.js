@@ -4,7 +4,7 @@ import './App.css'
 function TopBar () {
   return (
     <div className="top-bar" id="navbar">
-        <Link className="navbar-first" to="/"><strong>Final Portfolio</strong></Link>
+        <Link className="navbar-first" to="/"><strong>Becca's Portfolio</strong></Link>
         <Link to="/#About">About</Link>
         <div className="separator"></div>
         <Link to="/#Projects">Projects</Link>
