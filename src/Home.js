@@ -13,7 +13,7 @@ function Home() {
      
         <div className="intro">
           <div className="left-side-intro" >
-            <h2><b>Drowning Dolphin</b></h2>
+            <h2><b>Becca Waterson</b></h2>
             <br></br>
             <div>
               <p className="andale">Hello World!</p> 
@@ -49,6 +49,14 @@ function Home() {
               Especially with this
               UI/UX course, I've learned more about creating a narrative and mapping out a user experience as one might read a story.
             </p>
+            <div className="icons">
+              <a href="https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/" target="blank">
+                <img src="https://i.imgur.com/LzinyKk.png" width="30px"></img>
+              </a>
+              <a href="https://www.instagram.com/thesketchy.sketches/" target="blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="30px"></img>
+              </a>
+            </div>
           </div>
           <Bubbles />
         </div>
