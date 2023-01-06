@@ -10,6 +10,7 @@ function Landscape() {
       <br className="break"></br>
       <br className="break"></br>
       <br className="break"></br>
+      <div className='story-container'>
 
       <div className="story">
         <h3>Landscape Assignment</h3>
@@ -45,6 +46,7 @@ function Landscape() {
         <p>
         The bear makes his way slowly up the mountain pausing to appreciate the gifts the wind brings him. Here, the scent of thawing dirt and new bulbs beginning to sprout into the smallest of flower buds. There, the distant sound of a waterfall bursting to life through its icy prison. One breeze twirls his fur and rolls along his back, only to be pushed aside by another who plants chilled kisses along his snout.
         </p>
+      </div>
       </div>
       <Footer />
     </div>

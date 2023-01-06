@@ -10,11 +10,13 @@ function BearMaiden() {
       <br className="break"></br>
       <br className="break"></br>
       <br className="break"></br>
-
+<div className='story-container'>
       <div className="story">
       <h3>The Bear and the Maiden Fair</h3>
       <br></br>
-      <img src="https://i.imgur.com/AtaJVOv.png" className="bm-img"></img>
+      <div className='imgs'>
+        <img src="https://i.imgur.com/AtaJVOv.png" width="600px"></img>
+      </div>
       <br></br>
       <p>
       The night breeze sweeps gracefully through the long pink curtains framing the sliding glass doors. 
@@ -115,6 +117,7 @@ function BearMaiden() {
       remembered it. The wind’s hands caressed her face one last time as the final rays of sun broke into the room, 
       and then it fluttered out into the day, leaving behind the scent of Old Spice Pure Sport.
       </p>
+      </div>
       </div>
       <Footer />
     </div>

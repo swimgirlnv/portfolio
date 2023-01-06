@@ -10,7 +10,7 @@ function Dual() {
       <br className="break"></br>
       <br className="break"></br>
       <br className="break"></br>
-
+<div className='story-container'>
       <div className="story">
         <h3>The Dual Meet</h3>
         <br></br>
@@ -181,6 +181,7 @@ function Dual() {
         <p>
         “YEAH!” Otto howls punching the air with his stopwatch. The Einherjar may have lost each previous heat, but Embla had saved them all.
         </p>
+      </div>
       </div>
       <Footer />
     </div>

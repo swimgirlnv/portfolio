@@ -10,7 +10,7 @@ function Clark() {
       <br className="break"></br>
       <br className="break"></br>
       <br className="break"></br>
-
+<div className='story-container'>
       <div className="story">
       <h3>Re Memory</h3>
       <br></br>
@@ -42,7 +42,10 @@ function Clark() {
       Yet, in the depths of the obsidian pool formed from this magma, the same color as him, she knows that the memories she has and can interact with—the idea of his bark, his frantic smile, his pattering paws—will eventually be like the golden-orange sunbeam; a ray of light.
       </p>
       <br></br>
-      <img src="https://i.imgur.com/sIb0gaZ.jpg" className="bm-img"></img>
+      <div className='imgs'>
+        <img src="https://i.imgur.com/sIb0gaZ.jpg" width="600px"></img>
+      </div>
+      </div>
       </div>
       <Footer />
     </div>
