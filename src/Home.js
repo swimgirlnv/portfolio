@@ -18,9 +18,13 @@ function Home() {
             <div>
               <p className="andale">Hello World!</p> 
               <br></br>
-              <p>I am currently a Junior at Brown University and pursuing a double concentration in Computer Science and Literary Arts.</p>
+              <p>I am currently a Junior at Brown University and pursuing a double concentration in Computer Science and Literary Arts. I am also a coder, storyteller, doodler, and D1 college swimmer.</p>
               <br></br>
-              <p>Scroll to learn more about me and to explore what I've created during my time at Brown! (Including my collection of alligator drawings :D)</p>
+              <p>
+                I've spent the last thirteen years with my head in the water, swimming and thinking and dreaming through countless practices.
+              </p>
+              <br></br>
+              <p>Join me underwater and explore what I've been up to!</p>
             </div>
           </div>
           <div className="right-side-intro">
