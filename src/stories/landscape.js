@@ -1,15 +1,10 @@
-import Footer from '../Footer';
-import TopBar from '../TopBar';
+
 import './stories.css';
 
 function Landscape() {
   return (
-    <div className="Landscape">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-small">
+     
       <div className='story-container'>
 
       <div className="story">
@@ -53,7 +48,6 @@ function Landscape() {
       </a>
       </div>
       </div>
-      <Footer />
     </div>
   );
 }

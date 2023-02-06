@@ -4,12 +4,8 @@ import './stories.css';
 
 function Dual() {
   return (
-    <div className="DualMeet">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-big">
+      
 <div className='story-container'>
       <div className="story">
         <h3>The Dual Meet</h3>
@@ -188,7 +184,6 @@ function Dual() {
       </a>
       </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -4,12 +4,8 @@ import './stories.css';
 
 function Kin() {
   return (
-    <div className="Landscape">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-big">
+      
       <div className='story-container'>
 
       <div className="story">
@@ -193,7 +189,6 @@ function Kin() {
       </a>
       </div>
       </div>
-      <Footer />
     </div>
   );
 }

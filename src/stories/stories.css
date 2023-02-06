@@ -24,5 +24,15 @@
 }
 
 .anothaone {
+  
+}
+
+.page-container-big {
+  padding-top: 60px;
   height: 100%;
+}
+
+.page-container-small {
+  padding-top: 60px;
+  height: 100vh;
 }

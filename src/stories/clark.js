@@ -1,15 +1,10 @@
-import Footer from '../Footer';
-import TopBar from '../TopBar';
+
 import './stories.css';
 
 function Clark() {
   return (
-    <div className="Clark">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-big">
+      
       <div className='anothaone'>
 <div className='story-container'>
       <div className="story">
@@ -54,7 +49,7 @@ function Clark() {
       </div>
       </div>
       </div>
-      <Footer />
+     
     </div>
   );
 }

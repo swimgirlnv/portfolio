@@ -4,12 +4,7 @@ import './stories.css';
 
 function Worm() {
   return (
-    <div className="Worm">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-small">
 <div className='story-container'>
       <div className="story">
       <h3>You have become a worm.</h3>
@@ -57,7 +52,7 @@ function Worm() {
       </a>
       </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

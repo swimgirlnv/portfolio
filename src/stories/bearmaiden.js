@@ -4,12 +4,8 @@ import './stories.css';
 
 function BearMaiden() {
   return (
-    <div className="BearMaiden">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-big">
+      
 <div className='story-container'>
       <div className="story">
       <h3>The Bear and the Maiden Fair</h3>
@@ -127,7 +123,6 @@ function BearMaiden() {
 
       </div>
     
-      <Footer />
     </div>
   );
 }

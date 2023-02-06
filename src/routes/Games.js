@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
+import TopBar from '../TopBar';
 import './routes.css';
 
-function Stories () {
+function Games () {
   return(
     <div className="explainer-page">
+      <TopBar />
+      <br></br>
+      <br></br>
+      <br></br>
 
       <div className='content-container'>
         <div className='content2'>
@@ -76,9 +82,9 @@ function Stories () {
           </div>
         </div>
       </div>
-      
+      <Footer />
     </div>
   );
 }
 
-export default Stories;
+export default Games;

@@ -19,10 +19,16 @@ import Clark from './stories/clark';
 import Butterfly from './stories/butterfly';
 import Kin from './stories/kin';
 import Worm from './stories/worm';
+import Games from './routes/Games';
+
+import './App.css';
+import Footer from './Footer';
+import TopBar from './TopBar';
 
 function App () {
   return (
     <>
+    <TopBar></TopBar>
          <Routes>
            <Route path="/" element={<Home />} />
            <Route path="/Personas" element={<Personas />} />
@@ -31,6 +37,7 @@ function App () {
            <Route path="/Development" element={<Development />} />
            <Route path="/Arcana" element={<Arcana />} />
            <Route path="/Stories" element={<Stories />} />
+           <Route path="/Games" element={<Games />} />
 
            <Route path="/BearMaiden" element={<BearMaiden />} />
            <Route path="/Dual" element={<Dual />} />
@@ -38,8 +45,9 @@ function App () {
            <Route path='/Clark' element={<Clark />} />
            <Route path='/Butterfly' element={<Butterfly />} />
            <Route path='/Kin' element={<Kin />} />
-           <Route path='/Worm' element={<Worm />} />
+           <Route path='/Worm' element={<Worm />} />     
          </Routes>
+         <Footer />
      </>
     );
 }

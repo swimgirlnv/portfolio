@@ -8,7 +8,9 @@ function TopBar () {
         <Link to="/#About">About</Link>
         <div className="separator"></div>
         <Link to="/#Projects">Projects</Link>
-        <div className="separator"></div>
+        <div className='separator'></div>
+        {/* <Link to="/Games">Games</Link> */}
+        {/* <div className="separator"></div> */}
         <Link className="navbar-last" to="/Stories">Stories</Link>
     </div>
   );

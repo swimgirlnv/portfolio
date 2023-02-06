@@ -1,14 +1,11 @@
 import "./App.css";
 import Bubbles from './Bubbles';
-import TopBar from "./TopBar";
-import Footer from './Footer';
 import { Link } from "react-router-dom";
 
 function Home() {
   
   return (
     <div className="App">
-      <TopBar />
         <div className="page-content" id="Intro">
      
         <div className="intro">
@@ -272,7 +269,6 @@ function Home() {
       </div>
 
       </div>
-      <Footer />
     </div>
   )
 }

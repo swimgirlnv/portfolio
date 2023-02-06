@@ -1,15 +1,10 @@
-import Footer from '../Footer';
-import TopBar from '../TopBar';
+
 import './stories.css';
 
 function Butterfly() {
   return (
-    <div className="Butterfly">
-      <TopBar/>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
-      <br className="break"></br>
+    <div className="page-container-big">
+      
 <div className='story-container'>
       <div className="story">
       <h3>Butterfly</h3>
@@ -277,7 +272,6 @@ function Butterfly() {
       </a>
       </div>
       </div>
-      <Footer />
     </div>
   );
 }
