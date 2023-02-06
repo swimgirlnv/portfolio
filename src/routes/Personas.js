@@ -7,11 +7,7 @@ import Footer from '../Footer';
 function Personas () {
   return(
     <div className='explainer-page'>
-      <TopBar />
-      <br></br>
-      <br></br>
-      <br></br>
-
+      
       <div className='content-container'>
         <div className='anothercontainer'>
 
@@ -69,7 +65,6 @@ function Personas () {
       </div>
       </div>
       </div>
-      <Footer />
     </div>
   );
 }

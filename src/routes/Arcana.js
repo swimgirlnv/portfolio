@@ -8,11 +8,7 @@ function Arcana () {
   return(
 
     <div className='explainer-page'>
-    <TopBar />
-    <br></br>
-    <br></br>
-    <br></br>
-
+    
     <div className='content-container'>
 
     <div className='content'>
@@ -50,7 +46,7 @@ function Arcana () {
       </Link>
     </div>
     </div>
-    <Footer />
+    
     </div>
   );
 }

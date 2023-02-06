@@ -6,11 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 function Development () {
   return(
     <div className='explainer-page'>
-      <TopBar />
-      <br></br>
-      <br></br>
-      <br></br>
-
+    
       <div className='content-container'>
 
       <div className='content'>
@@ -68,9 +64,7 @@ The value of this application to a user is relatively low since Club Penguin no 
         </Link>
       </div>
       </div>
-      <div className="footer2">
-        <p>Made with love in Providence</p>
-      </div>
+      
     </div>
   );
 }
