@@ -48,8 +48,9 @@ function Responsive () {
       <h3>In conclusion...</h3>
       <hr className='hr'></hr>
       <p>
-        This project helped make me more aware of the accesibility and responsiveness of the websites I create. I also began to think more about 
-        color/font/size of elements to blah blah TODO
+        This project helped make me more aware of the accesibility and responsiveness of the 
+        websites I create. I also began to think more about color/font/size of elements when designing a website.
+        Although the scaling of the site in different window sizes is not perfect, the skills I learned in this project have helped me in my own personal projects.
       </p>
     </div>
     </div>

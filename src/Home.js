@@ -1,11 +1,11 @@
-import "./App.css";
+import "./Home.css";
 import Bubbles from './Bubbles';
 import { Link } from "react-router-dom";
 
 function Home() {
   
   return (
-    <div className="App">
+    <div className="Home">
         <div className="page-content" id="Intro">
      
         <div className="intro">

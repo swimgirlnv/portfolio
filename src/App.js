@@ -27,28 +27,34 @@ import TopBar from './TopBar';
 
 function App () {
   return (
-    <>
-    <TopBar></TopBar>
-         <Routes>
-           <Route path="/" element={<Home />} />
-           <Route path="/Personas" element={<Personas />} />
-           <Route path="/Responsive" element={<Responsive />} />
-           <Route path="/Iterative" element={<Iterative /> } />
-           <Route path="/Development" element={<Development />} />
-           <Route path="/Arcana" element={<Arcana />} />
-           <Route path="/Stories" element={<Stories />} />
-           <Route path="/Games" element={<Games />} />
+    <div className="page">
+    <div className="top-of-page">
+      <TopBar />
+    </div>
+    <div className="meat-of-page">
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Personas" element={<Personas />} />
+          <Route path="/Responsive" element={<Responsive />} />
+          <Route path="/Iterative" element={<Iterative /> } />
+          <Route path="/Development" element={<Development />} />
+          <Route path="/Arcana" element={<Arcana />} />
+          <Route path="/Stories" element={<Stories />} />
+          <Route path="/Games" element={<Games />} />
 
-           <Route path="/BearMaiden" element={<BearMaiden />} />
-           <Route path="/Dual" element={<Dual />} />
-           <Route path='/Landscape' element={<Landscape />} />
-           <Route path='/Clark' element={<Clark />} />
-           <Route path='/Butterfly' element={<Butterfly />} />
-           <Route path='/Kin' element={<Kin />} />
-           <Route path='/Worm' element={<Worm />} />     
-         </Routes>
-         <Footer />
-     </>
+          <Route path="/BearMaiden" element={<BearMaiden />} />
+          <Route path="/Dual" element={<Dual />} />
+          <Route path='/Landscape' element={<Landscape />} />
+          <Route path='/Clark' element={<Clark />} />
+          <Route path='/Butterfly' element={<Butterfly />} />
+          <Route path='/Kin' element={<Kin />} />
+          <Route path='/Worm' element={<Worm />} />     
+        </Routes>
+    </div>
+    <div className="bottom-of-page">
+      <Footer />
+    </div>
+    </div>
     );
 }
 

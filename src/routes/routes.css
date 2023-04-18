@@ -1,16 +1,14 @@
 .explainer-page {
-  
-  width: 100%;
-  
+  width: 100vw;
   color: black;
-  padding-top: 60px;
+  background-image: linear-gradient(rgb(109,247,255), #000081 );
 }
 
 .content-container {
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
 
 .content {
@@ -54,17 +52,6 @@
   border: none;
 }
 
-.footer2 {
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-  background-color: #000081;
-  height: 30px;
-  color: white;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
 
 .content2 {
   color: black;

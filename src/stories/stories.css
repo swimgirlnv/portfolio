@@ -4,7 +4,7 @@
   text-align: justify;
   padding: 20px;
   max-width: 800px;
- 
+
 }
 
 .story-container {
@@ -23,14 +23,12 @@
   align-items: center;
 }
 
-
-
 .page-container-big {
   padding-top: 60px;
-  height: 100%;
+  background-image: linear-gradient(rgb(109,247,255), #000081 );
 }
 
 .page-container-small {
   padding-top: 60px;
-  height: 100vh;
+  background-image: linear-gradient(rgb(109,247,255), #000081 );
 }

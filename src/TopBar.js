@@ -4,14 +4,19 @@ import './App.css'
 function TopBar () {
   return (
     <div className="top-bar" id="navbar">
-        <Link className="navbar-first" to="/"><strong>Becca's Portfolio</strong></Link>
+      <div className="navbar-first">
+      <Link to="/"><strong>Becca's Portfolio</strong></Link>
+      </div>
+      <div className="navbar-rest">
         <Link to="/#About">About</Link>
         <div className="separator"></div>
         <Link to="/#Projects">Projects</Link>
         <div className='separator'></div>
         {/* <Link to="/Games">Games</Link> */}
         {/* <div className="separator"></div> */}
-        <Link className="navbar-last" to="/Stories">Stories</Link>
+        <Link to="/Stories">Stories</Link>
+      </div>
+        
     </div>
   );
 }
