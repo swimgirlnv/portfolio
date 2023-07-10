@@ -5,6 +5,12 @@
   height: 100vh;
 }
 
+.explainer-page2 {
+  width: 100%;
+  color: black;
+  background-image: linear-gradient(rgb(109,247,255), #000081 );
+}
+
 .content-container {
   padding-top: 60px;
   display: flex;
