@@ -4,7 +4,7 @@
   height: 100vh;
   text-align: center;
   font-family: 'Gill Sans';
-  width: 100vw;
+  width: 100%;
 }
 
 .footer {
@@ -12,7 +12,7 @@
   justify-content: center;
   background-color: #000081;
   color: white;
-  width: 100vw;
+  width: 100%;
   
   bottom: 0px;
   left: 0px;
@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: space-between;
   
-  width: 100vw;
+  width: 100%;
   background-color: #6DF7FF;
 }
 
