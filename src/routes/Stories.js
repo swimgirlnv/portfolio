@@ -66,12 +66,21 @@ function Stories () {
           <div className='content3'>
             <h3>Publications</h3>
             <div className='imgs'>
-              <a href="https://www.scdsoctagon.com/author/rebecca-waterson/" target="blank">
-                <img src="https://i0.wp.com/www.scdsoctagon.com/wp-content/uploads/2020/06/cropped-octagon-round-logo.png?fit=512%2C512&ssl=1" width="100px"></img>
-              </a>
-              <a href="http://www.theribofbrown.com/classics-concentrator-teaches-tinder-date-about-oedipus/" target="blank" >
-                <img src="https://i0.wp.com/www.theribofbrown.com/wp-content/uploads/2021/10/cropped-logo.png?w=300" width="100px"></img>
-              </a>
+              <div className="link-item">
+                <a href="https://a.co/d/7dQm5YF" target="blank">
+                  <img src="https://i.imgur.com/VbTbBLv.png" height="100px"></img>
+                </a>
+              </div>
+              <div className="link-item">
+                <a href="https://www.scdsoctagon.com/author/rebecca-waterson/" target="blank">
+                  <img src="https://i0.wp.com/www.scdsoctagon.com/wp-content/uploads/2020/06/cropped-octagon-round-logo.png?fit=512%2C512&ssl=1" width="100px"></img>
+                </a>
+              </div>
+              <div className="link-item">
+                <a href="http://www.theribofbrown.com/classics-concentrator-teaches-tinder-date-about-oedipus/" target="blank" >
+                  <img src="https://i0.wp.com/www.theribofbrown.com/wp-content/uploads/2021/10/cropped-logo.png?w=300" width="100px"></img>
+                </a>
+              </div>
             </div>
           </div>
         </div>
