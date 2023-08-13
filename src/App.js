@@ -20,6 +20,7 @@ import Butterfly from './stories/butterfly';
 import Kin from './stories/kin';
 import Worm from './stories/worm';
 import Games from './routes/Games';
+import UCLA from './stories/ucla';
 
 import './App.css';
 import Footer from './Footer';
@@ -49,6 +50,7 @@ function App () {
           <Route path='/Butterfly' element={<Butterfly />} />
           <Route path='/Kin' element={<Kin />} />
           <Route path='/Worm' element={<Worm />} />     
+          <Route path='/UCLA' element={<UCLA />} />     
         </Routes>
     </div>
     <div className="bottom-of-page">

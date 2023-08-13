@@ -63,6 +63,14 @@ function Stories () {
               </p>
             </div>
           </Link>
+          <Link to='/UCLA'>
+            <div className='content3'>
+              <h3>UCLA Film & Television Summer Institute</h3>
+              <p>
+              A compilation of my work from the Introduction to TV Writing course I took in the summer of 2023.
+              </p>
+            </div>
+          </Link>
           <div className='content3'>
             <h3>Publications</h3>
             <div className='imgs'>
