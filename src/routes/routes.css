@@ -2,13 +2,14 @@
   width: 100%;
   color: black;
   background-image: linear-gradient(rgb(109,247,255), #000081 );
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .explainer-page2 {
   width: 100%;
   color: black;
   background-image: linear-gradient(rgb(109,247,255), #000081 );
+  min-height: 100vh;
 }
 
 .content-container {

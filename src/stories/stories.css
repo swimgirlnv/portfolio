@@ -26,9 +26,18 @@
 .page-container-big {
   padding-top: 60px;
   background-image: linear-gradient(rgb(109,247,255), #000081 );
+  min-height: 100vh;
 }
 
 .page-container-small {
   padding-top: 60px;
   background-image: linear-gradient(rgb(109,247,255), #000081 );
+  min-height: 100vh;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+
+  padding: 20px;
 }

@@ -263,6 +263,22 @@ function Home() {
                   </a>
                 </div>
               </div>
+
+              <div className="bot-item4">
+                
+                <div className="card">
+                  <a href="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design" target="blank">
+                    <img className="screenshots" 
+                    src="https://i.etsystatic.com/6083130/r/il/08ce07/3773221434/il_fullxfull.3773221434_p2vu.jpg"
+                    alt="Screenshot of part of the Figma page from the Lists Project"></img>
+                  </a>
+                </div>
+                <div className="item4-content">
+                  <h3><b>Thayer Tarot</b></h3>
+                  <hr></hr>
+                  <p>A Literary Arts project that used Figma to create a choos-your-own-adventure game.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

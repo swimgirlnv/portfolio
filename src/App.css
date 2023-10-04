@@ -1,7 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   font-family: 'Gill Sans';
   width: 100%;
@@ -16,7 +16,6 @@
   
   bottom: 0px;
   left: 0px;
-  right: 0px;
 }
 
 .top-of-page {
