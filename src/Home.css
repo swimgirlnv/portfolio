@@ -2,26 +2,25 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
   width: 100%;
 }
 
- .intro {
+.intro {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(rgb(109,247,255), rgb(0,197,205) );
+  background-image: linear-gradient(rgb(109, 247, 255), rgb(0, 197, 205));
   margin-top: 47px;
   width: 100%;
- }
+}
 
- .andale {
+.andale {
   font-family: "Courier New";
- }
+}
 
- 
 .left-side-intro {
   text-align: left;
   padding: 20px;
@@ -45,7 +44,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#729efd, rgb(111,101,189));
+  background-image: linear-gradient(#729efd, rgb(111, 101, 189));
   width: 100%;
 }
 
@@ -79,7 +78,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgb(111,101,189), rgb(89,70,178));
+  background-image: linear-gradient(rgb(111, 101, 189), rgb(89, 70, 178));
   width: 100%;
 }
 
@@ -113,20 +112,18 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgb(89,70,178), rgb(51,51,161));
+  background-image: linear-gradient(rgb(89, 70, 178), rgb(51, 51, 161));
   width: 100%;
-
 }
 
-.left-side-item3{
+.left-side-item3 {
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.center-item3{
+.center-item3 {
   color: white;
   display: flex;
   flex-direction: row;
@@ -135,7 +132,7 @@
   padding: 20px;
 }
 
-.right-side-item3{
+.right-side-item3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,7 +145,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(51,51,161), #000081);
+  background-image: linear-gradient(rgb(51, 51, 161), #000081);
 }
 
 .top-item4 {
@@ -169,7 +166,7 @@
 }
 
 .card {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: max-content;
   width: max-content;
@@ -177,26 +174,32 @@
   border-radius: 50%;
   padding: 10px;
   /*background-color: rgb(109,247,255, .5);*/
-  background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
-  }
-  
-  .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-  }
+  background: radial-gradient(
+    circle at 50% 120%,
+    #81e8f6,
+    #76deef 10%,
+    #055194 80%,
+    #062745 100%
+  );
+}
 
-  .grid-container {
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  }
+}
 
-  .descriptions {
-    max-width: 500px;
-    text-align: justify;
-  }
+.descriptions {
+  max-width: 500px;
+  text-align: justify;
+  hyphens: auto;
+}
 
-  
 .bubble {
   border-radius: 50%;
   width: 150px;
@@ -352,7 +355,7 @@ div .dot {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgb(0,197,205), #729efd );
+  background-image: linear-gradient(rgb(0, 197, 205), #729efd);
 }
 
 .about-content {
@@ -402,6 +405,7 @@ div .dot {
   margin: 10px;
   max-width: 220px;
   text-align: justify;
+  hyphens: auto;
 }
 
 .needthisreactive {

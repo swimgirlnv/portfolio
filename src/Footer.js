@@ -1,10 +1,10 @@
-import './App.css'
+import "./App.css";
 
-function Footer () {
+function Footer() {
   return (
-  <div className="footer">
-    <p>Made with love in Providence</p>
-  </div>
+    <div className="footer">
+      <p>Made with love in Providence</p>
+    </div>
   );
 }
 

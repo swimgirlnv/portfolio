@@ -1,14 +1,14 @@
 .explainer-page {
   width: 100%;
   color: black;
-  background-image: linear-gradient(rgb(109,247,255), #000081 );
+  background-image: linear-gradient(rgb(109, 247, 255), #000081);
   min-height: 100vh;
 }
 
 .explainer-page2 {
   width: 100%;
   color: black;
-  background-image: linear-gradient(rgb(109,247,255), #000081 );
+  background-image: linear-gradient(rgb(109, 247, 255), #000081);
   min-height: 100vh;
 }
 
@@ -24,7 +24,6 @@
   max-width: 600px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  
 }
 
 .anothercontainer {
@@ -59,7 +58,6 @@
   background-color: black;
   border: none;
 }
-
 
 .content2 {
   color: black;
