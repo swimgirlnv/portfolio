@@ -286,7 +286,7 @@ function Home() {
                   <div className="descriptions" style={{ textAlign: "justify" }}>
                     <p>
                       A Literary Arts project that used Figma to create a
-                      choos-your-own-adventure game.
+                      choose-your-own-adventure game.
                     </p>
                   </div>
                 </div>
