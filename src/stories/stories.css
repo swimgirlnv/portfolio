@@ -39,3 +39,9 @@
 
   padding: 20px;
 }
+
+.embed {
+  min-width: 800px;
+  /* min-width: 400px; */
+  min-height: 90vh;
+}

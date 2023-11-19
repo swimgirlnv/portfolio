@@ -18,10 +18,14 @@ import Kin from "./stories/kin";
 import Worm from "./stories/worm";
 import Games from "./routes/Games";
 import UCLA from "./stories/ucla";
+import SwanPoint from "./stories/swanpoint";
+import Thayer from "./stories/thayer";
+import Ireland from "./stories/ireland";
 
 import "./App.css";
 import Footer from "./Footer";
 import TopBar from "./TopBar";
+
 
 function App() {
   return (
@@ -48,6 +52,11 @@ function App() {
           <Route path="/Kin" element={<Kin />} />
           <Route path="/Worm" element={<Worm />} />
           <Route path="/UCLA" element={<UCLA />} />
+          <Route path="/SwanPoint" element={<SwanPoint />} />
+          <Route path="/Thayer" element={<Thayer />} />
+          <Route path="/Ireland" element={<Ireland />} />
+
+
         </Routes>
       </div>
       <div className="bottom-of-page">
