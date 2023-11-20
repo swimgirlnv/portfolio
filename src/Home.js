@@ -58,6 +58,12 @@ function Home() {
             </p>
             <br></br>
             <p>
+            I've also been an undergraduate 
+            teaching assistant for <i>Intro to Software Engineering</i> and <i><a href="https://cs1951v-2023.vercel.app/" target="_blank">Hypertext/Hypermedia</a></i>, a <a href="https://swimgirlnv.github.io/hegeman-site.github.io/#Intro" target="_blank">resident advisor</a>, and a varsity swimmer who's 
+            made it to two Ivy League Championships. I like to work hard and create fun, beautiful things!
+            </p>
+            <br></br>
+            <p>
               Especially in the CSCI 1300 course for UI/UX (where this portfolio
               was born as my final project, check out the OG{" "}
               <a
