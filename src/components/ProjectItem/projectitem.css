@@ -1,0 +1,36 @@
+.project-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .project-item.left {
+    justify-content: flex-start;
+  }
+  
+  .project-item.right {
+    justify-content: flex-end;
+  }
+  
+  .project-item .center-item {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .project-item .text {
+    max-width: 500px;
+  }
+  
+  .project-item .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-item .screenshots {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

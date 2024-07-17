@@ -1,8 +1,27 @@
 import "./Home.css";
 import Bubbles from "./Bubbles";
 import { Link } from "react-router-dom";
+import ProjectItem from "./components/ProjectItem/ProjectItem";
+import RightSideBubble from "./components/Bubbles/RightSideBubble";
+import AlligatorBubbles from "./components/AlligatorBubbles/AlligatorBubbles";
+import LeftSideBubble from "./components/Bubbles/LeftSideBubble";
 
 function Home() {
+  const alligatorDrawings1 = [
+    [null, { alt: 'Alligator sketch', src: 'https://i.imgur.com/4pXynPQ.png' }],
+    [{ alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' }, null]
+  ];
+
+  const alligatorDrawings2 = [
+    [{ alt: 'Alligator sketch with pink water wings.', src: 'https://i.imgur.com/HzXbXMd.jpg' }, null],
+    [null, { alt: 'Farmer alligator sketch sitting on a hay bale.', src: 'https://i.imgur.com/SfCdaAf.jpg' }]
+  ];
+
+  const alligatorDrawings3 = [
+    [null, { alt: 'Sketch of alligator on a surf board.', src: 'https://i.imgur.com/kqcOvtU.jpg' }],
+    [{ alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }, null]
+  ];
+
   return (
     <div className="Home">
       <div className="page-content" id="Intro">
@@ -102,202 +121,47 @@ function Home() {
 
         <div className="grid-container" id="Projects">
           <div className="item1">
-            <div className="left-side-item1">
-              <div className="card">
-                <Link to="/Arcana">
-                  <img
-                    className="screenshots"
-                    src="https://i.imgur.com/5hzflr1.png"
-                    alt="Major Arcana Logo"
-                  ></img>
-                </Link>
-              </div>
-            </div>
-            <div className="center-item1">
-              <div className="text-left" style={{ textAlign: "left" }}>
-                <h3><b>Major Arcana</b></h3>
-                <hr></hr>
-                <div className="descriptions" style={{ textAlign: "justify" }}>
-                  <p>
-                    A playful exploration of using GPT3's text-davinci-003 to
-                    generate a reading based on the random tarot cards users
-                    uncover.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="right-side-item1">
-              <div className="bubbles">
-                <table>
-                  <tr>
-                    <td></td>
-                    <td>
-                      <img
-                        className="bubble"
-                        alt="Alligator sketch"
-                        src="https://i.imgur.com/4pXynPQ.png"
-                      ></img>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        className="bubble"
-                        alt="Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'."
-                        src="https://i.imgur.com/qjtfzgl.png"
-                      ></img>
-                    </td>
-                    <td></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
+            <ProjectItem
+              title="Major Arcana"
+              description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
+              image="https://i.imgur.com/5hzflr1.png"
+              projectLink="/Arcana"
+              alignRight={false}
+            />
+            <RightSideBubble>
+            <AlligatorBubbles images={alligatorDrawings1} />
+            </RightSideBubble>
           </div>
           <div className="item2">
-            <div className="left-side-item2" id="ResponsiveRedesign">
-              <div className="bubbles">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                        className="bubble"
-                        alt="Alligator sketch with pink water wings."
-                        src="https://i.imgur.com/HzXbXMd.jpg"
-                      ></img>
-                    </td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>
-                      <img
-                        className="bubble"
-                        alt="Farmer alligator sketch sitting on a hay bale."
-                        src="https://i.imgur.com/SfCdaAf.jpg"
-                      ></img>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div className="needthisreactive">
-              <div className="center-item2">
-                <div className="text" style={{ textAlign: "right" }}>
-                  <h3>
-                    <b>Location Mythos</b>
-                  </h3>
-                  <hr></hr>
-                  <div className="descriptions">
-                    <p>
-                      A Literary Arts project that aimed to allow readers to
-                      follow the links on the maps to read a single "myth"
-                      attached to a specific location.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="right-side-item2">
-                <div className="card">
-                  <a
-                    href="https://swimgirlnv.github.io/litr-210-final/"
-                    target="blank"
-                  >
-                    <img
-                      className="screenshots"
-                      src="https://i.imgur.com/Spo00wU.jpg"
-                      alt="Simple image of a compass."
-                    ></img>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <LeftSideBubble>
+              <AlligatorBubbles images={alligatorDrawings2} />
+            </LeftSideBubble>
+            <ProjectItem
+              title="Location Mythos"
+              description="A Literary Arts project that aimed to allow readers to follow the links on the maps to read a single 'myth' attached to a specific location."
+              image="https://i.imgur.com/Spo00wU.jpg"
+              projectLink="https://swimgirlnv.github.io/litr-210-final/"
+              alignRight={true}
+            />
           </div>
           <div className="item3">
-            <div className="left-side-item3">
-              <div className="card">
-                <a
-                  href="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545"
-                  target="blank"
-                >
-                  <img
-                    className="screenshots"
-                    src="https://i.imgur.com/6Ge9YBY.png"
-                    alt="Screenshot of part of the Figma page from the Lists Project"
-                  ></img>
-                </a>
-              </div>
-            </div>
-            <div className="center-item3">
-              <div className="text" style={{ textAlign: "left" }}>
-                <h3>
-                  <b>List Project</b>
-                </h3>
-                <hr></hr>
-                <div className="descriptions" style={{ textAlign: "justify" }}>
-                  <p>
-                    A Literary Arts project that used Figma to allow users to
-                      interact with the story and piece it together as they
-                      read.
-                  </p>
-                </div> 
-               
-              </div>
-            </div>
-            <div className="right-side-item3">
-              <div className="bubbles">
-                <table>
-                  <tr>
-                    <td></td>
-                    <td>
-                      <img
-                        className="bubble"
-                        alt="Sketch of alligator on a surf board."
-                        src="https://i.imgur.com/kqcOvtU.jpg"
-                      ></img>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        className="bubble"
-                        alt="Sketch of alligator sitting at table typing on computer."
-                        src="https://i.imgur.com/TVW2iPf.jpg"
-                      ></img>
-                    </td>
-                    <td></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-
-            <div className="left-side-item3">
-              <div className="card">
-                <a
-                  href="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
-                  target="blank"
-                >
-                  <img
-                    className="screenshots"
-                    src="https://i.etsystatic.com/6083130/r/il/08ce07/3773221434/il_fullxfull.3773221434_p2vu.jpg"
-                    alt="Screenshot of part of the Figma page from the Lists Project"
-                  ></img>
-                </a>
-              </div>
-              <div className="center-item3">
-                <div className="text" style={{ textAlign: "left" }}>
-                  <h3>
-                    <b>Thayer Tarot</b>
-                  </h3>
-                  <hr></hr>
-                  <div className="descriptions" style={{ textAlign: "justify" }}>
-                    <p>
-                      A Literary Arts project that used Figma to create a
-                      choose-your-own-adventure game.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectItem
+              title="List Project"
+              description="A Literary Arts project that used Figma to allow users to interact with the story and piece it together as they read."
+              image="https://i.imgur.com/6Ge9YBY.png"
+              projectLink="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545"
+              alignRight={false}
+            />
+            <RightSideBubble>
+              <AlligatorBubbles images={alligatorDrawings3} />
+            </RightSideBubble>
+            <ProjectItem
+              title="Thayer Tarot"
+              description="A Literary Arts project that used Figma to create a choose-your-own-adventure game."
+              image="https://i.etsystatic.com/6083130/r/il/08ce07/3773221434/il_fullxfull.3773221434_p2vu.jpg"
+              projectLink="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
+              alignRight={true}
+            />
           </div>
         </div>
         <div className="item4">
