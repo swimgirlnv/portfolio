@@ -10,6 +10,10 @@ const alligatorDrawings = [
   { src: 'https://i.imgur.com/SfCdaAf.jpg', alt: 'Farmer alligator sketch sitting on a hay bale.' },
   { src: 'https://i.imgur.com/kqcOvtU.jpg', alt: 'Sketch of alligator on a surf board.' },
   { src: 'https://i.imgur.com/TVW2iPf.jpg', alt: 'Sketch of alligator sitting at table typing on computer.' },
+  { src: 'https://i.imgur.com/1Vti6Ft.png', alt: 'Worm in a rubber ducky sketch.' },
+  { src: 'https://i.imgur.com/qukakbF.png', alt: 'Kiwi the alligator sketch.' },
+  { src: 'https://i.imgur.com/q8qCY76.png', alt: 'Fish in a prom dress.'},
+  { src: 'https://i.imgur.com/XxNXMNF.png', alt: 'Alligator on rollerskates.'},
 ];
 
 function Gallery() {
