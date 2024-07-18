@@ -28,6 +28,9 @@ import TopBar from "./TopBar";
 import Judge from "./routes/Judge";
 import Utilities from "./routes/Utilities";
 import Log from "./routes/Log";
+import Hillel from "./stories/hillel";
+import Myths from "./stories/myths";
+import Kiwi from "./stories/kiwi";
 
 
 function App() {
@@ -61,6 +64,9 @@ function App() {
           <Route path="/SwanPoint" element={<SwanPoint />} />
           <Route path="/Thayer" element={<Thayer />} />
           <Route path="/Ireland" element={<Ireland />} />
+          <Route path="/Hillel" element={<Hillel />} />
+          <Route path="/Myths" element={<Myths />} />
+          <Route path="/Kiwi" element={<Kiwi />} />
 
 
         </Routes>

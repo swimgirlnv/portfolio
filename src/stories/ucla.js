@@ -5,23 +5,17 @@ function UCLA() {
     <div className="page-container-big">
       <div className="story-container">
         <div className="story">
-          <div className="link">
-            <a href="/NARPs-Act1.pdf" download>
-              Act One Script
-            </a>
-          </div>
+          <iframe 
+          className="embed"
+          src="https://docs.google.com/document/d/e/2PACX-1vQ1yOtLBGUcX69EAcn5qRm2rOCCfiluzmmB56LeHdVQmeawl7Aw5_ljAJ-XZLzpcw-y-nM97Oi7U3Ug/pub?embedded=true"></iframe>
 
-          <div className="link">
-            <a href="/Pitch.pdf" download>
-              Pitch Script
-            </a>
-          </div>
+          <iframe 
+          className="embed"
+          src="https://docs.google.com/document/d/e/2PACX-1vRN8WsOtQOo-cp21KnDi5hnEMgf0fKEFrLZ4YZDyO3LYEE4fBjL2uP9qK0yvwsJ6oFF_VCsqP8sfYJI/pub?embedded=true"></iframe>
 
-          <div className="link">
-            <a href="NARPs-Outline.pdf" download>
-              Outline
-            </a>
-          </div>
+          <iframe 
+          className="embed"
+          src="https://docs.google.com/document/d/e/2PACX-1vRmeFz5cVv58r6rJjBFShelPRQNAKY74BpgxfSuc8CKviv4VOIKVdcKhyGkyMEQKP91EeFSnzvY8O-k/pub?embedded=true"></iframe>
         </div>
 
         <div className="return">

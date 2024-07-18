@@ -4,7 +4,7 @@ function Thayer() {
   return (
     <div className="page-container-small">
       <div className="story-container">
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vT9h4FRvoyLKZj41D7X4SJvq2wDRuEEM_eP7IN_kFre9UP1VH4PmpGecWI1TfIZf_h3LelxZTuqoRKR/pub?embedded=true"
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vR5kBO3--DqRgEWOdcBBgvRgt58XS1MzVBVrp1j92R15SjaO31d2zPO_ENszEZwBALvwk1KPWp9s7CZ/pub?embedded=true"
         className="embed"></iframe>
         <div className="return">
           <a href="#/Stories">
