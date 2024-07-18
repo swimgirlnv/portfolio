@@ -1,37 +1,11 @@
 import "./Home.css";
 import Bubbles from "./Bubbles";
-import { Link } from "react-router-dom";
 import ProjectItem from "./components/ProjectItem/ProjectItem";
-import RightSideBubble from "./components/Bubbles/RightSideBubble";
-import AlligatorBubbles from "./components/AlligatorBubbles/AlligatorBubbles";
-import LeftSideBubble from "./components/Bubbles/LeftSideBubble";
-import ThreeBubbles from "./components/ThreeJsBubbles/ThreeJsBubbles";
 import About from "./components/About/About";
+import React from 'react';
+
 
 function Home() {
-  const alligatorDrawings = [
-    { alt: 'Alligator sketch', src: 'https://i.imgur.com/4pXynPQ.png' },
-    { alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' },
-    { alt: 'Alligator sketch with pink water wings.', src: 'https://i.imgur.com/HzXbXMd.jpg' },
-    { alt: 'Farmer alligator sketch sitting on a hay bale.', src: 'https://i.imgur.com/SfCdaAf.jpg' },
-    { alt: 'Sketch of alligator on a surf board.', src: 'https://i.imgur.com/kqcOvtU.jpg' },
-    { alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }
-  ];
-
-  const alligatorDrawings1 = [
-    [null, { alt: 'Alligator sketch', src: 'https://i.imgur.com/4pXynPQ.png' }],
-    [{ alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' }, null]
-  ];
-
-  const alligatorDrawings2 = [
-    [{ alt: 'Alligator sketch with pink water wings.', src: 'https://i.imgur.com/HzXbXMd.jpg' }, null],
-    [null, { alt: 'Farmer alligator sketch sitting on a hay bale.', src: 'https://i.imgur.com/SfCdaAf.jpg' }]
-  ];
-
-  const alligatorDrawings3 = [
-    [null, { alt: 'Sketch of alligator on a surf board.', src: 'https://i.imgur.com/kqcOvtU.jpg' }],
-    [{ alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }, null]
-  ];
 
   return (
     <div className="Home">
