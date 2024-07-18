@@ -46,13 +46,13 @@ function Home() {
               <p className="andale">Hello World!</p>
               <br></br>
               <p>
-                I am currently a Junior at Brown University and pursuing a
+                I am currently a Senior at Brown University and pursuing a
                 double concentration in Computer Science and Literary Arts. I am
                 also a coder, storyteller, doodler, and D1 college swimmer.
               </p>
               <br></br>
               <p>
-                I've spent the last thirteen years with my head in the water,
+                I've spent the last fourteen years with my head in the water,
                 swimming and thinking and dreaming through countless practices.
               </p>
               <br></br>
@@ -166,36 +166,36 @@ function Home() {
           <div className="item3-5">
             {/* CLASS PROJECTS */}
             <ProjectItem
+              title="Iterative Design"
+              description="As part of CSCI 1300: UI/UX, worked through the entire design process by mocking up a solution to a chosen startup's content."
+              image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
+              projectLink="/Iterative"
+              alignRight={false}
+              tags={["React", "Figma", "Design Process"]}
+            />
+            <ProjectItem
               title="Development"
-              description="Built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
+              description="As part of CSCI 1300: UI/UX, built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
               image="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
               projectLink="/Development"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "JavaScript"]}
             />
             <ProjectItem
               title="Responsive Redesign"
-              description="Showcases the workflow of redesigning a simple website."
+              description="As part of CSCI 1300: UI/UX, built a site that showcases the workflow of redesigning a simple website."
               image="https://i.imgur.com/GqtZ1KJ.png"
               projectLink="/Responsive"
-              alignRight={true}
-              tags={["Figma", "Responsive Design"]}
+              alignRight={false}
+              tags={["React", "Figma", "Responsive Design"]}
             />
             <ProjectItem
               title="Personas & Story Boarding"
-              description="Created two personas based on laundry experiences and illustrated storyboards for the personas."
+              description="As part of CSCI 1300: UI/UX, created two personas based on laundry experiences and illustrated storyboards for the personas."
               image="https://i.imgur.com/5yV8LAU.png"
               projectLink="/Personas"
-              alignRight={false}
-              tags={["Figma", "Storytelling"]}
-            />
-            <ProjectItem
-              title="Iterative Design"
-              description="Worked through the entire design process by mocking up a solution to a chosen startup's content."
-              image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
-              projectLink="/Iterative"
               alignRight={true}
-              tags={["Figma", "Design Process"]}
+              tags={["HTML", "Figma", "Storytelling"]}
             />
           </div>
         </div>
