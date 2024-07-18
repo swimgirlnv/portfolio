@@ -5,21 +5,17 @@ import ProjectItem from "./components/ProjectItem/ProjectItem";
 import RightSideBubble from "./components/Bubbles/RightSideBubble";
 import AlligatorBubbles from "./components/AlligatorBubbles/AlligatorBubbles";
 import LeftSideBubble from "./components/Bubbles/LeftSideBubble";
+import ThreeBubbles from "./components/ThreeJsBubbles/ThreeJsBubbles";
+import About from "./components/About/About";
 
 function Home() {
-  const alligatorDrawings1 = [
-    [null, { alt: 'Alligator sketch', src: 'https://i.imgur.com/4pXynPQ.png' }],
-    [{ alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' }, null]
-  ];
-
-  const alligatorDrawings2 = [
-    [{ alt: 'Alligator sketch with pink water wings.', src: 'https://i.imgur.com/HzXbXMd.jpg' }, null],
-    [null, { alt: 'Farmer alligator sketch sitting on a hay bale.', src: 'https://i.imgur.com/SfCdaAf.jpg' }]
-  ];
-
-  const alligatorDrawings3 = [
-    [null, { alt: 'Sketch of alligator on a surf board.', src: 'https://i.imgur.com/kqcOvtU.jpg' }],
-    [{ alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }, null]
+  const alligatorDrawings = [
+    { alt: 'Alligator sketch', src: 'https://i.imgur.com/4pXynPQ.png' },
+    { alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' },
+    { alt: 'Alligator sketch with pink water wings.', src: 'https://i.imgur.com/HzXbXMd.jpg' },
+    { alt: 'Farmer alligator sketch sitting on a hay bale.', src: 'https://i.imgur.com/SfCdaAf.jpg' },
+    { alt: 'Sketch of alligator on a surf board.', src: 'https://i.imgur.com/kqcOvtU.jpg' },
+    { alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }
   ];
 
   return (
@@ -59,64 +55,7 @@ function Home() {
         </div>
 
         <div className="about" id="About">
-          <div className="about-content">
-            <h3>
-              <b>About</b>
-            </h3>
-            <br></br>
-            <p>
-              Through my undergraduate experience at Brown University I have
-              sought to explore new or non-traditional ways of telling and
-              expressing stories both fictional and real.
-            </p>
-            <br></br>
-            <p>
-              With courses in the Literary Arts and Computer Science
-              departments, I feel like I've had the chance to expand my
-              knowledge and tool kit for creating these types of stories.
-            </p>
-            <br></br>
-            <p>
-            I've also been an undergraduate 
-            teaching assistant for <i>Intro to Software Engineering</i> and <i><a href="https://cs1951v-2023.vercel.app/" target="_blank">Hypertext/Hypermedia</a></i>, a <a href="https://swimgirlnv.github.io/hegeman-site.github.io/#Intro" target="_blank">resident advisor</a>, and a varsity swimmer who's 
-            made it to two Ivy League Championships. I like to work hard and create fun, beautiful things!
-            </p>
-            <br></br>
-            <p>
-              Especially in the CSCI 1300 course for UI/UX (where this portfolio
-              was born as my final project, check out the OG{" "}
-              <a
-                href="https://drowningdolphin123.github.io/final-portfolio/"
-                target="blank"
-              >
-                here
-              </a>
-              !), I feel I've learned more about creating a narrative and
-              mapping out a user experience as one might read a story.
-            </p>
-            <br></br>
-            <div className="icons">
-              <div className="icon">
-                <a
-                  href="https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/"
-                  target="blank"
-                >
-                  <img src="https://i.imgur.com/LzinyKk.png" width="20px"></img>
-                </a>
-              </div>
-              <div className="icon">
-                <a
-                  href="https://www.instagram.com/thesketchy.sketches/"
-                  target="blank"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
-                    width="20px"
-                  ></img>
-                </a>
-              </div>
-            </div>
-          </div>
+          <About />
         </div>
 
         <div className="grid-container" id="Projects">
@@ -129,12 +68,12 @@ function Home() {
               alignRight={false}
             />
             <RightSideBubble>
-            <AlligatorBubbles images={alligatorDrawings1} />
+              <ThreeBubbles image={alligatorDrawings[1]} minZoom={1} maxZoom={3} />
             </RightSideBubble>
           </div>
           <div className="item2">
             <LeftSideBubble>
-              <AlligatorBubbles images={alligatorDrawings2} />
+              <ThreeBubbles image={alligatorDrawings[2]} minZoom={1} maxZoom={3}  />
             </LeftSideBubble>
             <ProjectItem
               title="Location Mythos"
@@ -153,8 +92,13 @@ function Home() {
               alignRight={false}
             />
             <RightSideBubble>
-              <AlligatorBubbles images={alligatorDrawings3} />
+              <ThreeBubbles image={alligatorDrawings[3]} minZoom={1} maxZoom={3} />
             </RightSideBubble>
+          </div>
+          <div className="item3-5">
+            <LeftSideBubble>
+              <ThreeBubbles image={alligatorDrawings[4]} minZoom={1} maxZoom={3} />
+            </LeftSideBubble>
             <ProjectItem
               title="Thayer Tarot"
               description="A Literary Arts project that used Figma to create a choose-your-own-adventure game."
@@ -162,6 +106,18 @@ function Home() {
               projectLink="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
               alignRight={true}
             />
+          </div>
+          <div className="item3-5">
+            <ProjectItem
+              title="Pick My Dinner"
+              description="A personal project using React and OpenAI to help users decide what to eat for dinner."
+              image='https://i.imgur.com/9CW99ux.png'
+              projectLink='https://pick-my-dinner.vercel.app/'
+              alignRight={false}
+            />
+            <RightSideBubble>
+              <ThreeBubbles image={alligatorDrawings[5]} minZoom={1} maxZoom={3} />
+            </RightSideBubble>
           </div>
         </div>
         <div className="item4">

@@ -1,0 +1,10 @@
+.three-bubbles-container {
+    width: 250px;
+    height: 250px;
+    min-height: 250px;
+    position: relative;
+    background: transparent; /* Ensure the container background is transparent */
+    overflow: hidden;
+    /* border: 1px solid #ccc; Light border for visibility */
+  }
+  

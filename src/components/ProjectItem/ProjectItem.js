@@ -9,6 +9,15 @@ function ProjectItem({ title, description, image, projectLink, alignRight }) {
     <div className={`project-item ${alignRight ? 'right' : 'left'}`}>
       {alignRight ? (
         <>
+          <div className="center-item">
+            <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
+              <h3 className='title'><b>{title}</b></h3>
+              <hr />
+              <div className="descriptions" style={{ textAlign: "justify" }}>
+                <p>{description}</p>
+              </div>
+            </div>
+          </div>
           <RightSideBubble>
             <div className="card">
               <Link to={projectLink}>
@@ -16,15 +25,6 @@ function ProjectItem({ title, description, image, projectLink, alignRight }) {
               </Link>
             </div>
           </RightSideBubble>
-          <div className="center-item">
-            <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
-              <h3><b>{title}</b></h3>
-              <hr />
-              <div className="descriptions" style={{ textAlign: "justify" }}>
-                <p>{description}</p>
-              </div>
-            </div>
-          </div>
         </>
       ) : (
         <>
@@ -37,7 +37,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight }) {
           </LeftSideBubble>
           <div className="center-item">
             <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
-              <h3><b>{title}</b></h3>
+              <h3 className='title'><b>{title}</b></h3>
               <hr />
               <div className="descriptions" style={{ textAlign: "justify" }}>
                 <p>{description}</p>

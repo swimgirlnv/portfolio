@@ -140,6 +140,17 @@
   padding: 20px;
 }
 
+.item3-5{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(51, 51, 161);
+  width: 100%;
+
+}
+
 .item4 {
   width: 100%;
   color: white;
