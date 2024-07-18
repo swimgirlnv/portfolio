@@ -140,7 +140,7 @@ function Home() {
           <div className="item4">
             {/* CLASS PROJECTS */}
             <ProjectItem
-              title="Iterative Design"
+              title="Iterative Design: Dr. Treat"
               description="As part of CSCI 1300: UI/UX, worked through the entire design process by mocking up a solution to a chosen startup's content."
               image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
               projectLink="/Iterative"
@@ -148,7 +148,7 @@ function Home() {
               tags={["React", "Figma", "Design Process"]}
             />
             <ProjectItem
-              title="Development"
+              title="Development: Penguin Party Palace"
               description="As part of CSCI 1300: UI/UX, built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
               image="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
               projectLink="/Development"
@@ -156,7 +156,7 @@ function Home() {
               tags={["React", "JavaScript"]}
             />
             <ProjectItem
-              title="Responsive Redesign"
+              title="Responsive Redesign: Incline Village Public Library"
               description="As part of CSCI 1300: UI/UX, built a site that showcases the workflow of redesigning a simple website."
               image="https://i.imgur.com/GqtZ1KJ.png"
               projectLink="/Responsive"
@@ -164,7 +164,7 @@ function Home() {
               tags={["React", "Figma", "Responsive Design"]}
             />
             <ProjectItem
-              title="Personas & Story Boarding"
+              title="Personas & Story Boarding: Hegeman Laundry"
               description="As part of CSCI 1300: UI/UX, created two personas based on laundry experiences and illustrated storyboards for the personas."
               image="https://i.imgur.com/5yV8LAU.png"
               projectLink="/Personas"
