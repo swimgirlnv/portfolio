@@ -29,20 +29,21 @@ function ThreeBubbles({ image, minZoom = 2, maxZoom = 10 }) {
     console.log('Renderer:', renderer); // Debug log
 
     // Add light to the scene
-    const ambientLight = new THREE.AmbientLight(0xffffff, 3); // brighter white light    
+    const ambientLight = new THREE.AmbientLight(0xffffff, 5); // brighter white light
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
     directionalLight.position.set(0, 10, 0).normalize(); // Light from above
     scene.add(directionalLight);
 
-    const pointLight1 = new THREE.PointLight(0xffffff, 1, 100);
+    const pointLight1 = new THREE.PointLight(0xffffff, 2, 100);
     pointLight1.position.set(0, 10, 0); // Light from directly above
     scene.add(pointLight1);
 
-    const pointLight2 = new THREE.PointLight(0xffffff, 0.8, 100);
+    const pointLight2 = new THREE.PointLight(0xffffff, 1.6, 100);
     pointLight2.position.set(5, 10, 5); // Additional light from above at an angle
     scene.add(pointLight2);
+
 
     // Check for valid image
     if (!image || !image.src) {
@@ -60,13 +61,15 @@ function ThreeBubbles({ image, minZoom = 2, maxZoom = 10 }) {
     const geometry = new THREE.SphereGeometry(1, 32, 32); // Radius set to 1
 
     const material = new THREE.MeshStandardMaterial({ 
-      map: texture, 
-      transparent: false, 
-      opacity: 1, // Make the image fully opaque
-      side: THREE.DoubleSide, // Render both sides of the sphere
-      roughness: 0.7, // Make the material less shiny
-      metalness: 0.5, // Add some metallic effect
-    });
+        map: texture, 
+        transparent: true, 
+        opacity: 0.5, // Set the alpha value
+        side: THREE.DoubleSide, // Render both sides of the sphere
+        roughness: 0.8, // Make the material less shiny
+        metalness: 0.3, // Add some metallic effect
+        // emissive: new THREE.Color(0xffffff), // Make the material emit white light
+        // emissiveIntensity: 0.5 // Adjust this value to control the emissiveness
+      });
 
     const bubble = new THREE.Mesh(geometry, material);
     scene.add(bubble);

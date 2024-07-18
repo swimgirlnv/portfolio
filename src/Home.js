@@ -18,6 +18,21 @@ function Home() {
     { alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }
   ];
 
+  const alligatorDrawings1 = [
+    [null, { alt: 'Alligator sketch', src: 'https://i.imgur.com/4pXynPQ.png' }],
+    [{ alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' }, null]
+  ];
+
+  const alligatorDrawings2 = [
+    [{ alt: 'Alligator sketch with pink water wings.', src: 'https://i.imgur.com/HzXbXMd.jpg' }, null],
+    [null, { alt: 'Farmer alligator sketch sitting on a hay bale.', src: 'https://i.imgur.com/SfCdaAf.jpg' }]
+  ];
+
+  const alligatorDrawings3 = [
+    [null, { alt: 'Sketch of alligator on a surf board.', src: 'https://i.imgur.com/kqcOvtU.jpg' }],
+    [{ alt: 'Sketch of alligator sitting at table typing on computer.', src: 'https://i.imgur.com/TVW2iPf.jpg' }, null]
+  ];
+
   return (
     <div className="Home">
       <div className="page-content" id="Intro">
@@ -60,6 +75,7 @@ function Home() {
 
         <div className="grid-container" id="Projects">
           <div className="item1">
+            {/* BEST TO SHOWCASE */}
             <ProjectItem
               title="Major Arcana"
               description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
@@ -67,17 +83,41 @@ function Home() {
               projectLink="/Arcana"
               alignRight={false}
             />
-            <RightSideBubble>
-              <ThreeBubbles image={alligatorDrawings[1]} minZoom={1} maxZoom={3} />
-            </RightSideBubble>
+            <ProjectItem
+              title="Pick My Dinner"
+              description="After being plagued by indecisiveness about what to have for dinner, I decided to let the computer decide for me. 
+              This application is designed to help others who struggle with the same problem. Features currently include getting suggestions for restaurants near the user or recipes generated through OpenAI, adding your own suggestions, and saving suggestions and restaurants to favorites."
+              image='https://i.imgur.com/QGAwrz6.png'
+              projectLink='https://pick-my-dinner.vercel.app/'
+              alignRight={true}
+            />
+            <ProjectItem
+              title="AI Diving Judge"
+              description="Final project for CSCI 1470: Deep Learning. Re-implemented an AI model that can score dives through video analysis."
+              image="https://i.imgur.com/NS82y9C.png"
+              projectLink="/Judge"
+              alignRight={false}
+            />
+            <ProjectItem
+              title="Public Utilities Comissions Letters Analysis"
+              description="Final project for CSCI 1951a: Data Science. Analyzed letters sent to Public Utilities Commissions to determine the sentiment of the letters."
+              image="https://upload.wikimedia.org/wikipedia/commons/0/0b/Arizona_Corporation_Commission_Seal.png"
+              projectLink="/Utilities"
+              alignRight={true}
+            />
+            <ProjectItem
+              title="Hypertext & Hypermedia Course Website"
+              description="Designed and built the class website for the Hypertext & Hypermedia course at Brown University."
+              image="https://i.imgur.com/OHedLbC.png"
+              projectLink="https://cs1951v-2023.vercel.app/"
+              alignRight={false}
+            />
           </div>
           <div className="item2">
-            <LeftSideBubble>
-              <ThreeBubbles image={alligatorDrawings[2]} minZoom={1} maxZoom={3}  />
-            </LeftSideBubble>
+            {/* FIGMA PROJECTS */}
             <ProjectItem
               title="Location Mythos"
-              description="A Literary Arts project that aimed to allow readers to follow the links on the maps to read a single 'myth' attached to a specific location."
+              description="In wanting to create an interactive writing piece, I put some of my budding GitHub Pages skills to the test to create a set of stories for readers to explore."
               image="https://i.imgur.com/Spo00wU.jpg"
               projectLink="https://swimgirlnv.github.io/litr-210-final/"
               alignRight={true}
@@ -91,14 +131,6 @@ function Home() {
               projectLink="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545"
               alignRight={false}
             />
-            <RightSideBubble>
-              <ThreeBubbles image={alligatorDrawings[3]} minZoom={1} maxZoom={3} />
-            </RightSideBubble>
-          </div>
-          <div className="item3-5">
-            <LeftSideBubble>
-              <ThreeBubbles image={alligatorDrawings[4]} minZoom={1} maxZoom={3} />
-            </LeftSideBubble>
             <ProjectItem
               title="Thayer Tarot"
               description="A Literary Arts project that used Figma to create a choose-your-own-adventure game."
@@ -108,116 +140,42 @@ function Home() {
             />
           </div>
           <div className="item3-5">
+            {/* CLASS PROJECTS */}
             <ProjectItem
-              title="Pick My Dinner"
-              description="A personal project using React and OpenAI to help users decide what to eat for dinner."
-              image='https://i.imgur.com/9CW99ux.png'
-              projectLink='https://pick-my-dinner.vercel.app/'
+              title="Development"
+              description="Built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
+              image="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
+              projectLink="/Development"
               alignRight={false}
             />
-            <RightSideBubble>
-              <ThreeBubbles image={alligatorDrawings[5]} minZoom={1} maxZoom={3} />
-            </RightSideBubble>
+            <ProjectItem
+              title="Responsive Redesign"
+              description="Showcases the workflow of redesigning a simple website."
+              image="https://i.imgur.com/GqtZ1KJ.png"
+              projectLink="/Responsive"
+              alignRight={true}
+            />
+            <ProjectItem
+              title="Personas & Story Boarding"
+              description="Created two personas based on laundry experiences and illustrated storyboards for the personas."
+              image="https://i.imgur.com/5yV8LAU.png"
+              projectLink="/Personas"
+              alignRight={false}
+            />
+            <ProjectItem
+              title="Iterative Design"
+              description="Worked through the entire design process by mocking up a solution to a chosen startup's content."
+              image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
+              projectLink="/Iterative"
+              alignRight={true}
+            />
           </div>
         </div>
         <div className="item4">
-          <div className="top-item4" id="AdditionalProjects">
-            <h3>
-              <b>Projects from CS 1300 UI/UX</b>
-            </h3>
-          </div>
-          <div className="bottom-item4">
-            <div className="outer">
-              <div className="left-item4">
-                <div className="top-item4">
-                  <div className="card">
-                    <Link to="/Development">
-                      <img
-                        className="screenshots"
-                        src="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
-                        alt="Club penguin mascot holding a pizza."
-                      ></img>
-                    </Link>
-                  </div>
-                  <div className="item4-content">
-                    <h3>
-                      <b>Development</b>
-                    </h3>
-                    <hr></hr>
-                    <p>
-                      Built an application in React to filter, sort, and
-                      aggregate a menu of Club Penguin foods.
-                    </p>
-                  </div>
-                </div>
-                <div className="bot-item4">
-                  <div className="item4-content">
-                    <h3>
-                      <b>Responsive Redesign</b>
-                    </h3>
-                    <hr></hr>
-                    <p>
-                      Showcases the workflow of redesigning a simple website.
-                    </p>
-                  </div>
-                  <div className="card">
-                    <Link to="/Responsive">
-                      <img
-                        className="screenshots"
-                        src="https://i.imgur.com/GqtZ1KJ.png"
-                        alt="Washoe County Library System logo"
-                      ></img>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="right-item4">
-                <div className="top-item4">
-                  <div className="card">
-                    <Link to="/Personas">
-                      <img
-                        className="screenshots"
-                        alt="Sketch of user holding dirty laundry."
-                        src="https://i.imgur.com/5yV8LAU.png"
-                      ></img>
-                    </Link>
-                  </div>
-                  <div className="item4-content">
-                    <h3>
-                    <b style={{hypens: 'auto'}}>Personas & Story Boarding</b>
-                    </h3>
-                    <hr></hr>
-                      <p>
-                        Created two
-                        personas based on laundry experiences and illustrated
-                        storyboards for the personas.
-                      </p>
-                  </div>
-                </div>
-                <div className="bot-item4">
-                  <div className="item4-content">
-                    <h3>
-                    <b>Iterative Design</b>
-                    </h3>
-                    <hr></hr>
-                    <p>
-                        Worked through the entire design process by mocking up a solution to a
-                        chosen startup's content.
-                    </p>
-                  </div>
-                  <div className="card">
-                  <Link to="/Iterative">
-                    <img
-                      className="screenshots"
-                      src="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
-                      alt="Dr. Treat logo"
-                    ></img>
-                  </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* IMAGE GALLERY */}
+          <AlligatorBubbles images={alligatorDrawings1} />
+          <AlligatorBubbles images={alligatorDrawings2} />
+          <AlligatorBubbles images={alligatorDrawings3} />
         </div>
       </div>
     </div>

@@ -25,6 +25,8 @@ import Ireland from "./stories/ireland";
 import "./App.css";
 import Footer from "./Footer";
 import TopBar from "./TopBar";
+import Judge from "./routes/Judge";
+import Utilities from "./routes/Utilities";
 
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
           <Route path="/Iterative" element={<Iterative />} />
           <Route path="/Development" element={<Development />} />
           <Route path="/Arcana" element={<Arcana />} />
+          <Route path="/Judge" element={<Judge />} />
+          <Route path="/Utilities" element={<Utilities />} />
           <Route path="/Stories" element={<Stories />} />
           <Route path="/Games" element={<Games />} />
 
