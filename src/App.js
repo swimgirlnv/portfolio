@@ -27,6 +27,7 @@ import Footer from "./Footer";
 import TopBar from "./TopBar";
 import Judge from "./routes/Judge";
 import Utilities from "./routes/Utilities";
+import Log from "./routes/Log";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/Arcana" element={<Arcana />} />
           <Route path="/Judge" element={<Judge />} />
           <Route path="/Utilities" element={<Utilities />} />
+          <Route path="/Log" element={<Log />} />
           <Route path="/Stories" element={<Stories />} />
           <Route path="/Games" element={<Games />} />
 

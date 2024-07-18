@@ -110,16 +110,32 @@ function Home() {
               tags={["Python", "Pandas", "Scikit-learn", "Data Analysis"]}
             />
             <ProjectItem
+              title="Log"
+              description="Final project for CSCI 1230: Computer Graphics. A 3D scene that showcases the use of shaders and textures."
+              image="https://i.imgur.com/26aGl0V.png"
+              projectLink="/Log"
+              alignRight={false}
+              tags={["C++", "OpenGL", "GLSL", "Three.js"]}
+            />
+            <ProjectItem
               title="Hypertext & Hypermedia Course Website"
               description="Designed and built the class website for the Hypertext & Hypermedia course at Brown University."
               image="https://i.imgur.com/OHedLbC.png"
               projectLink="https://cs1951v-2023.vercel.app/"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "Next.js", "Vercel"]}
             />
           </div>
           <div className="item2">
             {/* FIGMA PROJECTS */}
+            <ProjectItem
+              title="The Phantom of the Disco"
+              description="A digital lookbook for the Advanced Screenwriting course at Brown University."
+              image="https://i.imgur.com/NPStApd.png"
+              projectLink="https://swimgirlnv.github.io/lookbook/"
+              alignRight={false}
+              tags={["React", "GitHub Pages", "Storytelling"]}
+            />
             <ProjectItem
               title="Location Mythos"
               description="In wanting to create an interactive writing piece, I put some of my budding GitHub Pages skills to the test to create a set of stories for readers to explore."

@@ -26,7 +26,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight, tags 
           </div>
           <RightSideBubble>
             <div className="card">
-              <Link to={projectLink}>
+              <Link to={projectLink} target='blank'>
                 <img className="screenshots" src={image} alt={title} />
               </Link>
             </div>
@@ -36,7 +36,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight, tags 
         <>
           <LeftSideBubble>
             <div className="card">
-              <Link to={projectLink}>
+              <Link to={projectLink} target='blank'>
                 <img className="screenshots" src={image} alt={title} />
               </Link>
             </div>
