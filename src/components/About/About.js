@@ -42,10 +42,18 @@ function About() {
             <div className="icons">
               <div className="icon">
                 <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vQHFb7OqqalqcVa8bYUEjXQVD_kRuW90ElYsGGn0nD1JePm6siNdy2azrm5nsmy0p9HwUjw_WlUJ0Mm/pub"
+                  target="blank"
+                >
+                  <img src="https://i.imgur.com/f0iE8ga.png" width="20px" alt="resume"></img>
+                </a>
+              </div>
+              <div className="icon">
+                <a
                   href="https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/"
                   target="blank"
                 >
-                  <img src="https://i.imgur.com/LzinyKk.png" width="20px"></img>
+                  <img src="https://i.imgur.com/LzinyKk.png" width="20px" alt="linkedin"></img>
                 </a>
               </div>
               <div className="icon">
@@ -56,6 +64,16 @@ function About() {
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
                     width="20px"
+                    alt="instagram"
+                  ></img>
+                </a>
+              </div>
+              <div className="icon">
+                <a href="https://github.com/swimgirlnv/" target="blank">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                    width="20px"
+                    alt="github"
                   ></img>
                 </a>
               </div>
