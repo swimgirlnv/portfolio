@@ -6,6 +6,9 @@
   font-family: "Gill Sans";
   width: 100%;
 }
+* {
+  box-sizing: border-box;
+}
 
 .footer {
   display: flex;
