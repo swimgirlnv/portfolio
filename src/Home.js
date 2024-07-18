@@ -82,6 +82,7 @@ function Home() {
               image="https://i.imgur.com/5hzflr1.png"
               projectLink="/Arcana"
               alignRight={false}
+              tags={["React", "OpenAI API", "Full Stack Development", "Java", "TypeScript"]}
             />
             <ProjectItem
               title="Pick My Dinner"
@@ -90,6 +91,7 @@ function Home() {
               image='https://i.imgur.com/QGAwrz6.png'
               projectLink='https://pick-my-dinner.vercel.app/'
               alignRight={true}
+              tags={["React", "OpenAI API", "GooglePlaces API", "Full Stack Development", "Vercel", "TypeScript"]}
             />
             <ProjectItem
               title="AI Diving Judge"
@@ -97,6 +99,7 @@ function Home() {
               image="https://i.imgur.com/NS82y9C.png"
               projectLink="/Judge"
               alignRight={false}
+              tags={["Python", "PyTorch", "OpenCV", "Deep Learning"]}
             />
             <ProjectItem
               title="Public Utilities Comissions Letters Analysis"
@@ -104,6 +107,7 @@ function Home() {
               image="https://upload.wikimedia.org/wikipedia/commons/0/0b/Arizona_Corporation_Commission_Seal.png"
               projectLink="/Utilities"
               alignRight={true}
+              tags={["Python", "Pandas", "Scikit-learn", "Data Analysis"]}
             />
             <ProjectItem
               title="Hypertext & Hypermedia Course Website"
@@ -111,6 +115,7 @@ function Home() {
               image="https://i.imgur.com/OHedLbC.png"
               projectLink="https://cs1951v-2023.vercel.app/"
               alignRight={false}
+              tags={["React", "Next.js", "Vercel"]}
             />
           </div>
           <div className="item2">
@@ -121,6 +126,7 @@ function Home() {
               image="https://i.imgur.com/Spo00wU.jpg"
               projectLink="https://swimgirlnv.github.io/litr-210-final/"
               alignRight={true}
+              tags={["GitHub Pages", "Storytelling"]}
             />
           </div>
           <div className="item3">
@@ -130,6 +136,7 @@ function Home() {
               image="https://i.imgur.com/6Ge9YBY.png"
               projectLink="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545"
               alignRight={false}
+              tags={["Figma", "Storytelling"]}
             />
             <ProjectItem
               title="Thayer Tarot"
@@ -137,6 +144,7 @@ function Home() {
               image="https://i.etsystatic.com/6083130/r/il/08ce07/3773221434/il_fullxfull.3773221434_p2vu.jpg"
               projectLink="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
               alignRight={true}
+              tags={["Figma", "Storytelling"]}
             />
           </div>
           <div className="item3-5">
@@ -147,6 +155,7 @@ function Home() {
               image="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
               projectLink="/Development"
               alignRight={false}
+              tags={["React", "JavaScript"]}
             />
             <ProjectItem
               title="Responsive Redesign"
@@ -154,6 +163,7 @@ function Home() {
               image="https://i.imgur.com/GqtZ1KJ.png"
               projectLink="/Responsive"
               alignRight={true}
+              tags={["Figma", "Responsive Design"]}
             />
             <ProjectItem
               title="Personas & Story Boarding"
@@ -161,6 +171,7 @@ function Home() {
               image="https://i.imgur.com/5yV8LAU.png"
               projectLink="/Personas"
               alignRight={false}
+              tags={["Figma", "Storytelling"]}
             />
             <ProjectItem
               title="Iterative Design"
@@ -168,6 +179,7 @@ function Home() {
               image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
               projectLink="/Iterative"
               alignRight={true}
+              tags={["Figma", "Design Process"]}
             />
           </div>
         </div>

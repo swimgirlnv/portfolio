@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import './projectitem.css';
 import RightSideBubble from '../Bubbles/RightSideBubble';
 import LeftSideBubble from '../Bubbles/LeftSideBubble';
+import Tag from '../Tag/Tag';
 
-function ProjectItem({ title, description, image, projectLink, alignRight }) {
+function ProjectItem({ title, description, image, projectLink, alignRight, tags }) {
   return (
     <div className={`project-item ${alignRight ? 'right' : 'left'}`}>
       {alignRight ? (
@@ -15,6 +16,11 @@ function ProjectItem({ title, description, image, projectLink, alignRight }) {
               <hr />
               <div className="descriptions" style={{ textAlign: "justify" }}>
                 <p>{description}</p>
+                <div className="project-tags">
+                  {tags.map((tag, index) => (
+                    <Tag key={index} label={tag} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -41,6 +47,11 @@ function ProjectItem({ title, description, image, projectLink, alignRight }) {
               <hr />
               <div className="descriptions" style={{ textAlign: "justify" }}>
                 <p>{description}</p>
+                <div className="project-tags">
+                  {tags.map((tag, index) => (
+                    <Tag key={index} label={tag} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
