@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Gill Sans";
-  width: 100%;
+  width: 100vw;
 }
 
 .intro {
@@ -14,7 +14,6 @@
   height: 100vh;
   background-image: linear-gradient(rgb(109, 247, 255), rgb(0, 197, 205));
   margin-top: 47px;
-  width: 100%;
 }
 
 .andale {
@@ -45,7 +44,6 @@
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(#729efd, rgb(111, 101, 189));
-  width: 100%;
 }
 
 .left-side-item1 {
@@ -79,7 +77,6 @@
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgb(111, 101, 189), rgb(89, 70, 178));
-  width: 100%;
 }
 
 .left-side-item2 {
@@ -113,7 +110,6 @@
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgb(89, 70, 178), rgb(51, 51, 161));
-  width: 100%;
 }
 
 .left-side-item3 {
@@ -147,15 +143,14 @@
   align-items: center;
   justify-content: center;
   background: rgb(51, 51, 161);
-  width: 100%;
-
 }
 
 .item4 {
-  width: 100%;
-  color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(rgb(51, 51, 161), #000081);
 }
 
@@ -202,7 +197,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
 }
 
 .descriptions {

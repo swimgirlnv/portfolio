@@ -31,6 +31,7 @@ import Log from "./routes/Log";
 import Hillel from "./stories/hillel";
 import Myths from "./stories/myths";
 import Kiwi from "./stories/kiwi";
+import Gallery from "./routes/Gallery";
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="/Log" element={<Log />} />
           <Route path="/Stories" element={<Stories />} />
           <Route path="/Games" element={<Games />} />
+          <Route path="/Gallery" element={<Gallery />} />
 
           <Route path="/BearMaiden" element={<BearMaiden />} />
           <Route path="/Dual" element={<Dual />} />

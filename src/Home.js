@@ -163,7 +163,7 @@ function Home() {
               tags={["Figma", "Storytelling"]}
             />
           </div>
-          <div className="item3-5">
+          <div className="item4">
             {/* CLASS PROJECTS */}
             <ProjectItem
               title="Iterative Design"
@@ -198,12 +198,6 @@ function Home() {
               tags={["HTML", "Figma", "Storytelling"]}
             />
           </div>
-        </div>
-        <div className="item4">
-          {/* IMAGE GALLERY */}
-          <AlligatorBubbles images={alligatorDrawings1} />
-          <AlligatorBubbles images={alligatorDrawings2} />
-          <AlligatorBubbles images={alligatorDrawings3} />
         </div>
       </div>
     </div>

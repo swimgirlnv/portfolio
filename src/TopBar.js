@@ -17,6 +17,8 @@ function TopBar() {
         {/* <Link to="/Games">Games</Link> */}
         {/* <div className="separator"></div> */}
         <Link to="/Stories">Stories</Link>
+        <div className="separator"></div>
+        <Link to="/Gallery">Gallery</Link>
       </div>
     </div>
   );
