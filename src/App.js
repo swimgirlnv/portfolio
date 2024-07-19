@@ -23,8 +23,7 @@ import Thayer from "./stories/thayer";
 import Ireland from "./stories/ireland";
 
 import "./App.css";
-import Footer from "./Footer";
-import TopBar from "./TopBar";
+import Footer from "./components/Footer/Footer";
 import Judge from "./routes/Judge";
 import Utilities from "./routes/Utilities";
 import Log from "./routes/Log";
@@ -32,6 +31,7 @@ import Hillel from "./stories/hillel";
 import Myths from "./stories/myths";
 import Kiwi from "./stories/kiwi";
 import Gallery from "./routes/Gallery";
+import TopBar from "./components/TopBar/TopBar";
 
 
 function App() {

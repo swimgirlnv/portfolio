@@ -1,9 +1,11 @@
 import "./Home.css";
-import Bubbles from "./Bubbles";
+import Bubbles from "./components/IntroBubbles/Bubbles";
 import ProjectItem from "./components/ProjectItem/ProjectItem";
 import About from "./components/About/About";
 import React from 'react';
+import { useEffect } from "react";
 import ButtonContainer from "./components/ButtonContainer/ButtonContainer";
+import Intro from "./components/Intro/Intro";
 
 function Home() {
   const spinnerIcon = [
@@ -11,44 +13,48 @@ function Home() {
     { alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' },
   ];
 
+  useEffect(() => {
+    const topBar = document.querySelector(".top-bar");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const bgColor = window.getComputedStyle(entry.target).backgroundColor;
+            if (isLight(bgColor)) {
+              topBar.classList.remove("light-text");
+              topBar.classList.add("dark-text");
+            } else {
+              topBar.classList.remove("dark-text");
+              topBar.classList.add("light-text");
+            }
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const sections = document.querySelectorAll("#Intro, #About, #Projects");
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    function isLight(color) {
+      const rgb = color.match(/\d+/g);
+      const brightness = Math.round(
+        (parseInt(rgb[0]) * 299 +
+          parseInt(rgb[1]) * 587 +
+          parseInt(rgb[2]) * 114) /
+          1000
+      );
+      return brightness > 125;
+    }
+  }, []);
+
   return (
     <div className="Home">
-      <div className="page-content" id="Intro">
-        <div className="intro">
-          <div className="left-side-intro">
-            <h2>
-              <b>Becca Waterson</b>
-            </h2>
-            <br></br>
-            <div>
-              <p className="andale">Hello World!</p>
-              <br></br>
-              <p>
-                I am currently a Senior at Brown University and pursuing a
-                double concentration in Computer Science and Literary Arts. I am
-                also a coder, storyteller, doodler, and D1 college swimmer.
-              </p>
-              <br></br>
-              <p>
-                I've spent the last fourteen years with my head in the water,
-                swimming and thinking and dreaming through countless practices.
-              </p>
-              <br></br>
-              <p>Join me underwater and explore what I've been up to!</p>
-            </div>
-            <br></br>
-            <ButtonContainer />
-          </div>
-          <div className="right-side-intro">
-            <img
-              className="dolphin"
-              src="https://images.emojiterra.com/google/android-11/512px/1f42c.png"
-              alt="Emoticon of dolphin"
-            ></img>
-          </div>
-          <Bubbles />
-        </div>
-
+      <div className="page-content">
+        <Intro />
         <div className="about" id="About">
           <About />
         </div>
@@ -98,7 +104,7 @@ function Home() {
             />
             <ProjectItem
               title="Hypertext & Hypermedia Course Website"
-              description="Designed and built the class website for the Hypertext & Hypermedia course at Brown University."
+              description="Designed and built the class website for the CSCI 1951v: Hypertext & Hypermedia course at Brown University."
               image="https://i.imgur.com/OHedLbC.png"
               projectLink="https://cs1951v-2023.vercel.app/"
               alignRight={true}

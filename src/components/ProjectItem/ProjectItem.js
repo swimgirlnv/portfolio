@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './projectitem.css';
-import RightSideBubble from '../Bubbles/RightSideBubble';
-import LeftSideBubble from '../Bubbles/LeftSideBubble';
+import RightSideBubble from '../LRBubbles/RightSideBubble';
+import LeftSideBubble from '../LRBubbles/LeftSideBubble';
 import Tag from '../Tag/Tag';
 
 function ProjectItem({ title, description, image, projectLink, alignRight, tags }) {

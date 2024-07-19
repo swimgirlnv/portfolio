@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./introbubbles.css";
 
 function Bubbles() {
   return (

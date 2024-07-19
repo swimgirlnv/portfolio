@@ -1,7 +1,5 @@
-import TopBar from "../TopBar";
 import "./routes.css";
 import { HashLink as Link } from "react-router-hash-link";
-import Footer from "../Footer";
 
 function Arcana() {
   return (

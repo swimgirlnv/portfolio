@@ -1,5 +1,4 @@
-import Footer from "../Footer";
-import TopBar from "../TopBar";
+
 import "./stories.css";
 
 function Kin() {

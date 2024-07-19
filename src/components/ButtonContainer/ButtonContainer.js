@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileLines } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
-
+import './buttoncontainer.css';
 const ButtonContainer = () => {
   return (
     <div className="button-container">

@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import Footer from "../Footer";
-import TopBar from "../TopBar";
+
 import "./routes.css";
 
 const alligatorDrawings = [

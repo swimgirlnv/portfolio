@@ -1,5 +1,5 @@
 import React from 'react';
-import './bubbles.css';
+import './lrbubbles.css';
 
 function RightSideBubble({ children }) {
   return (

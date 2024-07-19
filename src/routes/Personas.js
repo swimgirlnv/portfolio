@@ -1,8 +1,6 @@
 import "./routes.css";
-import TopBar from "../TopBar";
 import { HashLink as Link } from "react-router-hash-link";
 
-import Footer from "../Footer";
 
 function Personas() {
   return (
