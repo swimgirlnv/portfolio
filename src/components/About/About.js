@@ -39,7 +39,7 @@ function About() {
               mapping out a user experience as one might read a story.
             </p>
             <br></br>
-            <div className="icons">
+            {/* <div className="icons">
               <div className="icon">
                 <a
                   href="https://docs.google.com/document/d/e/2PACX-1vQHFb7OqqalqcVa8bYUEjXQVD_kRuW90ElYsGGn0nD1JePm6siNdy2azrm5nsmy0p9HwUjw_WlUJ0Mm/pub"
@@ -77,7 +77,7 @@ function About() {
                   ></img>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
     );
 }

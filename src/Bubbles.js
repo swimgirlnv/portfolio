@@ -2,7 +2,7 @@ import "./Home.css";
 
 function Bubbles() {
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={{zIndex: '0'}}>
       <div>
         <span className="dot"></span>
       </div>

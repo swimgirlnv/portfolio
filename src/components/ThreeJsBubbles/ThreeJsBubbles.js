@@ -53,17 +53,18 @@ function ThreeBubbles({ image, minZoom = 2, maxZoom = 10 }) {
 
     console.log('Loading image:', image.src); // Debug log for image loading
 
-    const texture = new THREE.TextureLoader().load(image.src, (texture) => {
-      texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-      texture.repeat.set(4, 4); // Adjust the number of repetitions
-    });
+    // const texture = new THREE.TextureLoader().load(image.src, (texture) => {
+    //   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+    //   texture.repeat.set(4, 4); // Adjust the number of repetitions
+    // });
+    const texture = new THREE.TextureLoader().load(image.src);
 
-    const geometry = new THREE.SphereGeometry(1, 32, 32); // Radius set to 1
+    const geometry = new THREE.SphereGeometry(3, 32, 32); // Radius set to 1
 
     const material = new THREE.MeshStandardMaterial({ 
         map: texture, 
         transparent: true, 
-        opacity: 0.5, // Set the alpha value
+        opacity: 1, // Set the alpha value
         side: THREE.DoubleSide, // Render both sides of the sphere
         roughness: 0.8, // Make the material less shiny
         metalness: 0.3, // Add some metallic effect

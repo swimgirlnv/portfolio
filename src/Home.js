@@ -3,9 +3,13 @@ import Bubbles from "./Bubbles";
 import ProjectItem from "./components/ProjectItem/ProjectItem";
 import About from "./components/About/About";
 import React from 'react';
-
+import ButtonContainer from "./components/ButtonContainer/ButtonContainer";
 
 function Home() {
+  const spinnerIcon = [
+    { alt: 'Alligator sketch', src: 'https://i.imgur.com/AisQBxY.png' },
+    { alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'.", src: 'https://i.imgur.com/qjtfzgl.png' },
+  ];
 
   return (
     <div className="Home">
@@ -32,6 +36,8 @@ function Home() {
               <br></br>
               <p>Join me underwater and explore what I've been up to!</p>
             </div>
+            <br></br>
+            <ButtonContainer />
           </div>
           <div className="right-side-intro">
             <img
@@ -49,7 +55,6 @@ function Home() {
 
         <div className="grid-container" id="Projects">
           <div className="item1">
-            {/* BEST TO SHOWCASE */}
             <ProjectItem
               title="Major Arcana"
               description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
@@ -101,7 +106,6 @@ function Home() {
             />
           </div>
           <div className="item2">
-            {/* FIGMA PROJECTS */}
             <ProjectItem
               title="The Phantom of the Disco"
               description="A digital lookbook for the Advanced Screenwriting course at Brown University."
@@ -138,7 +142,6 @@ function Home() {
             />
           </div>
           <div className="item4">
-            {/* CLASS PROJECTS */}
             <ProjectItem
               title="Iterative Design: Dr. Treat"
               description="As part of CSCI 1300: UI/UX, worked through the entire design process by mocking up a solution to a chosen startup's content."
