@@ -55,10 +55,8 @@ function Home() {
     <div className="Home">
       <div className="page-content">
         <Intro />
-        <div className="about" id="About">
-          <About />
-        </div>
-
+        <About />
+        
         <div className="grid-container" id="Projects">
           <div className="item1">
             <ProjectItem
