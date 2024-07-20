@@ -150,7 +150,7 @@ function Home() {
             <ProjectItem
               title="Development: Penguin Party Palace"
               description="As part of CSCI 1300: UI/UX, built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
-              image="https://www.pngitem.com/pimgs/m/433-4339408_club-penguin-rewritten-wiki-club-penguin-pizza-chef.png"
+              image="https://media.tenor.com/ag9FQlRX11AAAAAM/club-penguin-penguin.gif"
               projectLink="/Development"
               alignRight={true}
               tags={["React", "JavaScript"]}
