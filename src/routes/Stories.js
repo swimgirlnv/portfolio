@@ -4,7 +4,7 @@ import StoryItem from '../components/StoryItem/StoryItem';
 
 function Stories() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortOption, setSortOption] = useState('a-z');
+  const [sortOption, setSortOption] = useState('date-desc');
   const [filterCourse, setFilterCourse] = useState('');
 
   const stories = [
@@ -30,11 +30,25 @@ function Stories() {
       date: '10-25-2023'
     },
     {
-      title: 'UCLA Film & Television Summer Institute',
-      description: 'A compilation of my work from the Introduction to TV Writing course I took in the summer of 2023.',
-      courseTitle: 'Introduction to TV Writing',
-      link: '/UCLA',
+      title: 'NARPs Pilot Act 1 Script',
+      description: 'The full Act 1 script of my pilot for the Introduction to TV Writing course I took in the summer of 2023.',
+      courseTitle: 'UCLA Film & Television Summer Institute',
+      link: '/UCLAPilot',
       date: '8-15-2023'
+    },
+    {
+      title: 'NARPs Pitch Script',
+      description: 'The pitch I gave to my classmates and the panel of industry professionals.',
+      courseTitle: 'UCLA Film & Television Summer Institute',
+      link: '/UCLAPitch',
+      date: '8-14-2023'
+    },
+    {
+      title: 'NARPs Outline',
+      description: 'The outline for my pilot for the Introduction to TV Writing course.',
+      courseTitle: 'UCLA Film & Television Summer Institute',
+      link: '/UCLAOutline',
+      date: '8-10-2023'
     },
     {
       title: 'Kiwi',
@@ -114,11 +128,7 @@ function Stories() {
   );
 
   const sortedStories = filteredStories.sort((a, b) => {
-    if (sortOption === 'a-z') {
-      return a.title.localeCompare(b.title);
-    } else if (sortOption === 'z-a') {
-      return b.title.localeCompare(a.title);
-    } else if (sortOption === 'date-asc') {
+    if (sortOption === 'date-asc') {
       return new Date(a.date) - new Date(b.date);
     } else if (sortOption === 'date-desc') {
       return new Date(b.date) - new Date(a.date);
@@ -176,8 +186,6 @@ function Stories() {
             onChange={e => setSearchTerm(e.target.value)}
           />
           <select onChange={e => setSortOption(e.target.value)} value={sortOption}>
-            <option value="a-z">A-Z</option>
-            <option value="z-a">Z-A</option>
             <option value="date-asc">Date (Oldest to Newest)</option>
             <option value="date-desc">Date (Newest to Oldest)</option>
           </select>

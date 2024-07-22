@@ -17,7 +17,6 @@ import Butterfly from "./stories/butterfly";
 import Kin from "./stories/kin";
 import Worm from "./stories/worm";
 import Games from "./routes/Games";
-import UCLA from "./stories/ucla";
 import SwanPoint from "./stories/swanpoint";
 import Thayer from "./stories/thayer";
 import Ireland from "./stories/ireland";
@@ -32,6 +31,9 @@ import Myths from "./stories/myths";
 import Kiwi from "./stories/kiwi";
 import Gallery from "./routes/Gallery";
 import TopBar from "./components/TopBar/TopBar";
+import UCLAPilot from "./stories/uclaPilot";
+import UCLAPitch from "./stories/uclaPitch";
+import UCLAOutline from "./stories/uclaOutline";
 
 
 function App() {
@@ -62,7 +64,9 @@ function App() {
           <Route path="/Butterfly" element={<Butterfly />} />
           <Route path="/Kin" element={<Kin />} />
           <Route path="/Worm" element={<Worm />} />
-          <Route path="/UCLA" element={<UCLA />} />
+          <Route path="/UCLAPilot" element={<UCLAPilot />} />
+          <Route path="/UCLAPitch" element={<UCLAPitch />} />
+          <Route path="/UCLAOutline" element={<UCLAOutline />} />
           <Route path="/SwanPoint" element={<SwanPoint />} />
           <Route path="/Thayer" element={<Thayer />} />
           <Route path="/Ireland" element={<Ireland />} />
