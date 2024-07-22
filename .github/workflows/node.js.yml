@@ -7,9 +7,9 @@ env:
 
 on:
   push:
-    branches: ["main", "workflow"]
+    branches: ["becca/3684", "workflow"]
   pull_request:
-    branches: ["main"]
+    branches: ["becca/3684"]
 
 jobs:
   build:
