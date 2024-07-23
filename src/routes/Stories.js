@@ -4,7 +4,7 @@ import StoryItem from '../components/StoryItem/StoryItem';
 
 function Stories() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortOption, setSortOption] = useState('date-desc');
+  const [sortOption, setSortOption] = useState('-');
   const [filterCourse, setFilterCourse] = useState('');
 
   const stories = [
@@ -13,112 +13,128 @@ function Stories() {
       description: 'A personal essay reflecting on a visit to Swan Point Cemetery in Providence, RI.',
       courseTitle: 'LITR 1151Q: Great Adventure',
       link: '/SwanPoint',
-      date: '10-16-2023'
+      date: '10-16-2023',
+      priority: 2
     },
     {
       title: 'Thayer Street',
       description: 'Part one of a three-part movement on traversing Thayer Street in Providence, RI.',
       courseTitle: 'LITR 1151Q: Great Adventure',
       link: '/Thayer',
-      date: '9-20-2023'
+      date: '9-20-2023',
+      priority: 2
     },
     {
       title: 'On to Ireland',
       description: 'A short film treatment exploring my fictional life as an expat in Ireland.',
       courseTitle: 'LITR 1151Q: Great Adventure',
       link: '/Ireland',
-      date: '10-25-2023'
+      date: '10-25-2023',
+      priority: 3
     },
     {
       title: 'NARPs Pilot Act 1 Script',
       description: 'The full Act 1 script of my pilot for the Introduction to TV Writing course I took in the summer of 2023.',
       courseTitle: 'UCLA Film & Television Summer Institute',
       link: '/UCLAPilot',
-      date: '8-15-2023'
+      date: '8-15-2023',
+      priority: 1
     },
     {
       title: 'NARPs Pitch Script',
       description: 'The pitch I gave to my classmates and the panel of industry professionals.',
       courseTitle: 'UCLA Film & Television Summer Institute',
       link: '/UCLAPitch',
-      date: '8-14-2023'
+      date: '8-14-2023',
+      priority: 1
     },
     {
       title: 'NARPs Outline',
       description: 'The outline for my pilot for the Introduction to TV Writing course.',
       courseTitle: 'UCLA Film & Television Summer Institute',
       link: '/UCLAOutline',
-      date: '8-10-2023'
+      date: '8-10-2023',
+      priority: 1
     },
     {
       title: 'Kiwi',
       description: 'The origin story of my Dungeons & Dragons character, Kiwi.',
       courseTitle: 'Personal Project',
       link: '/Kiwi',
-      date: '2-10-2022'
+      date: '2-10-2022',
+      priority: 3
     },
     {
       title: 'Hillel',
       description: 'A short story and relection following the death of a teammate.',
       courseTitle: 'Personal Project',
       link: '/Hillel',
-      date: '12-6-2022'
+      date: '12-6-2022',
+      priority: 3
     },
     {
       title: 'The Bear and the Maiden Fair',
       description: 'A heart-warming story of a girl and her new best friend.',
       courseTitle: 'LITR 0110H: Digital & Cross-Disciplinary',
       link: '/BearMaiden',
-      date: '6-20-2022'
+      date: '6-20-2022',
+      priority: 2
     },
     {
       title: 'Landscape Assignment',
       description: 'A piece dedicated to the beauty of the Mt. Rose wilderness.',
       courseTitle: 'LITR 0110H: Digital & Cross-Disciplinary',
       link: '/Landscape',
-      date: '9-6-2023'
+      date: '9-6-2023',
+      priority: 2
     },
     {
       title: 'Re Memory',
       description: 'Inspired by the sweetest friend anyone could ever ask for.',
       courseTitle: 'LITR 0110H: Digital & Cross-Disciplinary',
       link: '/Clark',
-      date: '2-1-2022'
+      date: '2-1-2022',
+      priority: 2
     },
     {
       title: 'Myth from a Minor Character Perspective',
       description: 'A short story based on The Children of Lir, written from the perspective of a Water Spirit who helps the swans in the icy waters of the Straits of Moyle.',
       courseTitle: 'LITR 0210: Fiction Writing II',
       link: '/Myths',
-      date: '10-30-2022'
+      date: '10-30-2022',
+      priority: 2
     },
     {
       title: 'Kin',
       description: 'An adaption of the myth my own mother told me when I was younger.',
       courseTitle: 'LITR 0210: Fiction Writing II',
       link: '/Kin',
-      date: '10-4-2022'
+      date: '10-4-2022',
+      priority: 2
     },
     {
       title: 'Worm Questions',
       description: 'A silly assignment done with the gracious collaboration of a lovely computer science neighbor.',
       courseTitle: 'LITR 0210: Fiction Writing II',
       link: '/Worm',
-      date: '9-28-2022'
+      date: '9-28-2022',
+      priority: 3
     },
     {
       title: 'The Dual Meet',
       description: 'A mythical exploration of the perils contained in a high school dual swim meet.',
       courseTitle: 'LITR 0110A: Fiction I',
       link: '/Dual',
-      date: '12-21-2021'
+      date: '12-21-2021',
+      priority: 2
     },
     {
       title: 'Butterfly',
       description: 'A bus ride caught between different slices of time.',
       courseTitle: 'LITR 0110A: Fiction I',
       link: '/Butterfly',
-      date: '9-1-2022'
+      date: '9-1-2022',
+      priority: 2
     },
   ];
 
@@ -132,8 +148,9 @@ function Stories() {
       return new Date(a.date) - new Date(b.date);
     } else if (sortOption === 'date-desc') {
       return new Date(b.date) - new Date(a.date);
+    } else if (sortOption === '-') {
+      return a.priority - b.priority;
     }
-    return 0;
   });
 
   return (
@@ -186,6 +203,7 @@ function Stories() {
             onChange={e => setSearchTerm(e.target.value)}
           />
           <select onChange={e => setSortOption(e.target.value)} value={sortOption}>
+            <option value="-">-</option>
             <option value="date-asc">Date (Oldest to Newest)</option>
             <option value="date-desc">Date (Newest to Oldest)</option>
           </select>
