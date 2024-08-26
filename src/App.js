@@ -38,6 +38,7 @@ import WitchyWarthog from "./routes/WitchyWarthog";
 import CCGPT from "./routes/CCGPT";
 import RevAI from "./routes/RevAI";
 import RevDealRoom from "./routes/RevDealRoom";
+import BearWind from "./stories/bearwind";
 
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
           <Route path="/Hillel" element={<Hillel />} />
           <Route path="/Myths" element={<Myths />} />
           <Route path="/Kiwi" element={<Kiwi />} />
+          <Route path="/BearWind" element={<BearWind />} />
 
 
         </Routes>

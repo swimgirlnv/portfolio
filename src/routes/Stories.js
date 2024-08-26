@@ -81,6 +81,14 @@ function Stories() {
       priority: 2
     },
     {
+      title: 'The Bear and the Wind',
+      description: 'A story board for my script, The Bear and the Wind.',
+      courseTitle: 'Personal Project',
+      link: '/BearWind',
+      date: '8-26-2024',
+      priority: 3
+    },
+    {
       title: 'Landscape Assignment',
       description: 'A piece dedicated to the beauty of the Mt. Rose wilderness.',
       courseTitle: 'LITR 0110H: Digital & Cross-Disciplinary',
