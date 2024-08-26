@@ -16,16 +16,6 @@ function About() {
               <div className="overlay">San Diego, CA</div>
             </div>
           </div>
-          <div className="about-img-col">
-            <div className="image-container" >
-              <img className="horz" src="https://i.imgur.com/SJZtan5.png" alt="Description 4" />
-              <div className="overlay">Desolation Wilderness, CA</div>
-            </div>
-            <div className="image-container">
-              <img className="vert" src="https://i.imgur.com/I7hsK1M.jpeg" alt="Description 2" />
-              <div className="overlay">San Francisco, CA</div>
-            </div>
-          </div>
         </div>
         <div className="about-content">
           <p>
@@ -70,6 +60,18 @@ function About() {
             !), I feel I've learned more about creating a narrative and
             mapping out a user experience as one might read a story.
           </p>
+        </div>
+        <div className="about-images">
+        <div className="about-img-col">
+            <div className="image-container" >
+              <img className="horz" src="https://i.imgur.com/SJZtan5.png" alt="Description 4" />
+              <div className="overlay">Desolation Wilderness, CA</div>
+            </div>
+            <div className="image-container">
+              <img className="vert" src="https://i.imgur.com/I7hsK1M.jpeg" alt="Description 2" />
+              <div className="overlay">San Francisco, CA</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

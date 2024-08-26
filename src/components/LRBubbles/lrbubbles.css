@@ -50,3 +50,14 @@
   .title {
     color: white;
   }
+
+  @media screen and (max-width: 768px) {
+    .right-side-bubble {
+      display: none;
+    }
+  
+    .left-side-bubble {
+      display: none;
+    }
+    
+  }

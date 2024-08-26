@@ -217,19 +217,20 @@ function Stories() {
           </select>
         </div>
 
-
-        <div className="content2">
-          {sortedStories.map((story, index) => (
-            <StoryItem
-              key={index}
-              title={story.title}
-              description={story.description}
-              courseTitle={story.courseTitle}
-              link={story.link}
-            />
-          ))}
+        {/* <div className='storygridcontainer'> */}
+          <div className="storygrid">
+            {sortedStories.map((story, index) => (
+              <StoryItem
+                key={index}
+                title={story.title}
+                description={story.description}
+                courseTitle={story.courseTitle}
+                link={story.link}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

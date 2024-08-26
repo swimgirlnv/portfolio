@@ -34,6 +34,10 @@ import TopBar from "./components/TopBar/TopBar";
 import UCLAPilot from "./stories/uclaPilot";
 import UCLAPitch from "./stories/uclaPitch";
 import UCLAOutline from "./stories/uclaOutline";
+import WitchyWarthog from "./routes/WitchyWarthog";
+import CCGPT from "./routes/CCGPT";
+import RevAI from "./routes/RevAI";
+import RevDealRoom from "./routes/RevDealRoom";
 
 
 function App() {
@@ -50,12 +54,16 @@ function App() {
           <Route path="/Iterative" element={<Iterative />} />
           <Route path="/Development" element={<Development />} />
           <Route path="/Arcana" element={<Arcana />} />
+          <Route path="/WitchyWarthog" element={<WitchyWarthog />} />
+          <Route path="/CCGPT" element={<CCGPT />} />
           <Route path="/Judge" element={<Judge />} />
           <Route path="/Utilities" element={<Utilities />} />
           <Route path="/Log" element={<Log />} />
           <Route path="/Stories" element={<Stories />} />
           <Route path="/Games" element={<Games />} />
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path ="/RevAI" element={<RevAI />} />
+          <Route path="/RevDealRoom" element={<RevDealRoom />} />
 
           <Route path="/BearMaiden" element={<BearMaiden />} />
           <Route path="/Dual" element={<Dual />} />

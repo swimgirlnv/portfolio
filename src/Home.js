@@ -60,6 +60,38 @@ function Home() {
         <div className="grid-container" id="Projects">
           <div className="item1">
             <ProjectItem
+              title="Revolear AI Assistant UI"
+              description="As a Full Stack Developer Intern at Revolear, I contributed to the development of the Revolear AI Assistant, a key feature in the company's B2B sales software."
+              image="https://i.imgur.com/8MuzshC.jpeg"
+              projectLink="/RevAI"
+              alignRight={false}
+              tags={["React", "OpenAI API", "Full Stack Development", "TypeScript", "AWS", "Responsive Web Design", "Redux"]}
+            />
+            <ProjectItem
+              title="Revolear Virtual Deal Room Chat"
+              description="During my internship at Revolear, I worked on enhancing the Virtual Deal Room Chat, a feature designed to streamline communication within the deal-making process."
+              image="https://i.imgur.com/8MuzshC.jpeg"
+              projectLink="/RevDealRoom"
+              alignRight={true}
+              tags={["Front-End Development", "React", "Redux", "TypeScript", "Responsive Web Design"]}
+            />
+            <ProjectItem
+              title="CC GPT"
+              description="A digital residential assistant to help answer Community Coordinator or student questions regarding Residential Life at Brown University."
+              image="https://i.imgur.com/M7SiN6C.png"
+              projectLink="/CCGPT"
+              alignRight={false}
+              tags={["React", "OpenAI API", "Full Stack Development", "TypeScript", "AWS"]}
+            />
+            <ProjectItem
+              title="Witchy Warthog"
+              description="Inspired by the board game 'Lizard Wizard,' this whimsical multiplayer strategy based game allows multiple players to embark on a journey together in building towers, recruiting wizards, casting spells, and summoning familiars."
+              image="https://i.imgur.com/0zaAlS0.png"
+              projectLink="/WitchyWarthog"
+              alignRight={true}
+              tags={["React", "Vite", "Vercel", "Firebase", "Full Stack Development", "TypeScript", "Project Management"]}
+            />
+            <ProjectItem
               title="Major Arcana"
               description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
               image="https://i.imgur.com/5hzflr1.png"
