@@ -94,22 +94,6 @@ function Home() {
               <hr className="hrr" />
             </div>
             <ProjectItem
-              title="CC GPT"
-              description="A digital residential assistant to help answer Community Coordinator or student questions regarding Residential Life at Brown University."
-              image="https://i.imgur.com/M7SiN6C.png"
-              projectLink="/CCGPT"
-              alignRight={true}
-              tags={["React", "OpenAI API", "Full Stack Development", "TypeScript", "AWS"]}
-            />
-            <ProjectItem
-              title="Witchy Warthog"
-              description="Inspired by the board game 'Lizard Wizard,' this whimsical multiplayer strategy based game allows multiple players to embark on a journey together in building towers, recruiting wizards, casting spells, and summoning familiars."
-              image="https://i.imgur.com/0zaAlS0.png"
-              projectLink="/WitchyWarthog"
-              alignRight={false}
-              tags={["React", "Vite", "Vercel", "Firebase", "Full Stack Development", "TypeScript", "Project Management"]}
-            />
-            <ProjectItem
               title="Major Arcana"
               description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
               image="https://i.imgur.com/5hzflr1.png"
@@ -125,6 +109,22 @@ function Home() {
               projectLink='https://pick-my-dinner.vercel.app/'
               alignRight={false}
               tags={["React", "OpenAI API", "GooglePlaces API", "Full Stack Development", "Vercel", "TypeScript"]}
+            />
+            <ProjectItem
+              title="Witchy Warthog"
+              description="Inspired by the board game 'Lizard Wizard,' this whimsical multiplayer strategy based game allows multiple players to embark on a journey together in building towers, recruiting wizards, casting spells, and summoning familiars."
+              image="https://i.imgur.com/0zaAlS0.png"
+              projectLink="/WitchyWarthog"
+              alignRight={true}
+              tags={["React", "Vite", "Vercel", "Firebase", "Full Stack Development", "TypeScript", "Project Management"]}
+            />
+            <ProjectItem
+              title="CC GPT"
+              description="A digital residential assistant to help answer Community Coordinator or student questions regarding Residential Life at Brown University."
+              image="https://i.imgur.com/M7SiN6C.png"
+              projectLink="/CCGPT"
+              alignRight={false}
+              tags={["React", "OpenAI API", "Full Stack Development", "TypeScript", "AWS"]}
             />
             <div className="projectstitles">
               <hr className="hrl" />
