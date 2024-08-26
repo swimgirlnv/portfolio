@@ -66,12 +66,12 @@ function CCGPT() {
         </div>
 
         <div className="return">
-          <a href="https://github.com/swimgirlnv/gradai" target="blank">
-            <button className="button">Check out the Repository</button>
-          </a>
           <Link to="/#Projects">
             <button className="button">Return to Projects</button>
           </Link>
+          <a href="https://github.com/swimgirlnv/gradai" target="blank">
+            <button className="button">Check out the Repository</button>
+          </a>
         </div>
       </div>
     </div>

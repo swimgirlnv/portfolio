@@ -217,7 +217,6 @@ function Stories() {
           </select>
         </div>
 
-        {/* <div className='storygridcontainer'> */}
           <div className="storygrid">
             {sortedStories.map((story, index) => (
               <StoryItem
@@ -230,7 +229,6 @@ function Stories() {
             ))}
           </div>
         </div>
-      {/* </div> */}
     </div>
   );
 }

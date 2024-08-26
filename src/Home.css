@@ -11,7 +11,7 @@
 
 .item1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
 
 .item2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
 
 .item3 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 
 .item3-5{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@
 
 .item4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -109,3 +109,24 @@
   opacity: 1;
 }
 
+.projectstitles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  margin: 20px 0;
+}
+
+.hrl, .hrr {
+  flex: 1;
+  border: none; /* Remove the default solid border */
+  border-top: 1px solid white; /* Add a solid top border */
+  margin: 0 20px; /* Add some space between the title and the hr */
+}
+
+.projecttitle {
+  white-space: nowrap;
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}

@@ -59,6 +59,11 @@ function Home() {
         
         <div className="grid-container" id="Projects">
           <div className="item1">
+            <div className="projectstitles">
+              <hr className="hrl" />
+              <h1 className="projecttitle">Work Experience</h1>
+              <hr className="hrr" />
+            </div>
             <ProjectItem
               title="Revolear AI Assistant UI"
               description="As a Full Stack Developer Intern at Revolear, I contributed to the development of the Revolear AI Assistant, a key feature in the company's B2B sales software."
@@ -76,11 +81,24 @@ function Home() {
               tags={["Front-End Development", "React", "Redux", "TypeScript", "Responsive Web Design"]}
             />
             <ProjectItem
+              title="Hypertext & Hypermedia Course Website"
+              description="Designed and built the class website for the CSCI 1951v: Hypertext & Hypermedia course at Brown University."
+              image="https://i.imgur.com/OHedLbC.png"
+              projectLink="https://cs1951v-2023.vercel.app/"
+              alignRight={false}
+              tags={["React", "Next.js", "Vercel"]}
+            />
+            <div className="projectstitles">
+              <hr className="hrl" />
+              <h1 className="projecttitle">Personal Projects</h1>
+              <hr className="hrr" />
+            </div>
+            <ProjectItem
               title="CC GPT"
               description="A digital residential assistant to help answer Community Coordinator or student questions regarding Residential Life at Brown University."
               image="https://i.imgur.com/M7SiN6C.png"
               projectLink="/CCGPT"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "OpenAI API", "Full Stack Development", "TypeScript", "AWS"]}
             />
             <ProjectItem
@@ -88,7 +106,7 @@ function Home() {
               description="Inspired by the board game 'Lizard Wizard,' this whimsical multiplayer strategy based game allows multiple players to embark on a journey together in building towers, recruiting wizards, casting spells, and summoning familiars."
               image="https://i.imgur.com/0zaAlS0.png"
               projectLink="/WitchyWarthog"
-              alignRight={true}
+              alignRight={false}
               tags={["React", "Vite", "Vercel", "Firebase", "Full Stack Development", "TypeScript", "Project Management"]}
             />
             <ProjectItem
@@ -96,7 +114,7 @@ function Home() {
               description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
               image="https://i.imgur.com/5hzflr1.png"
               projectLink="/Arcana"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "OpenAI API", "Full Stack Development", "Java", "TypeScript"]}
             />
             <ProjectItem
@@ -105,15 +123,20 @@ function Home() {
               This application is designed to help others who struggle with the same problem. Features currently include getting suggestions for restaurants near the user or recipes generated through OpenAI, adding your own suggestions, and saving suggestions and restaurants to favorites."
               image='https://i.imgur.com/QGAwrz6.png'
               projectLink='https://pick-my-dinner.vercel.app/'
-              alignRight={true}
+              alignRight={false}
               tags={["React", "OpenAI API", "GooglePlaces API", "Full Stack Development", "Vercel", "TypeScript"]}
             />
+            <div className="projectstitles">
+              <hr className="hrl" />
+              <h1 className="projecttitle">Class Projects</h1>
+              <hr className="hrr" />
+            </div>
             <ProjectItem
               title="AI Diving Judge"
               description="Final project for CSCI 1470: Deep Learning. Re-implemented an AI model that can score dives through video analysis."
               image="https://i.imgur.com/NS82y9C.png"
               projectLink="/Judge"
-              alignRight={false}
+              alignRight={true}
               tags={["Python", "PyTorch", "OpenCV", "Deep Learning"]}
             />
             <ProjectItem
@@ -121,7 +144,7 @@ function Home() {
               description="Final project for CSCI 1951a: Data Science. Analyzed letters sent to Public Utilities Commissions to determine the sentiment of the letters."
               image="https://upload.wikimedia.org/wikipedia/commons/0/0b/Arizona_Corporation_Commission_Seal.png"
               projectLink="/Utilities"
-              alignRight={true}
+              alignRight={false}
               tags={["Python", "Pandas", "Scikit-learn", "Data Analysis"]}
             />
             <ProjectItem
@@ -129,16 +152,8 @@ function Home() {
               description="Final project for CSCI 1230: Computer Graphics. A 3D scene that showcases the use of shaders and textures."
               image="https://i.imgur.com/26aGl0V.png"
               projectLink="/Log"
-              alignRight={false}
-              tags={["C++", "OpenGL", "GLSL", "Three.js"]}
-            />
-            <ProjectItem
-              title="Hypertext & Hypermedia Course Website"
-              description="Designed and built the class website for the CSCI 1951v: Hypertext & Hypermedia course at Brown University."
-              image="https://i.imgur.com/OHedLbC.png"
-              projectLink="https://cs1951v-2023.vercel.app/"
               alignRight={true}
-              tags={["React", "Next.js", "Vercel"]}
+              tags={["C++", "OpenGL", "GLSL", "Three.js"]}
             />
           </div>
           <div className="item2">

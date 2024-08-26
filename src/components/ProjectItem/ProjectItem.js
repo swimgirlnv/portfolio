@@ -14,7 +14,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight, tags 
               <div className="center-item">
                 <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
                   <h3 className='title'><b>{title}</b></h3>
-                  <hr />
+                  <hr style={{textDecoration: 'none', color: 'white'}} />
                   <div className="descriptions" style={{ textAlign: "justify" }}>
                     <p>{description}</p>
                     <div className="project-tags">
@@ -44,7 +44,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight, tags 
               <div className="center-item">
                 <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
                   <h3 className='title'><b>{title}</b></h3>
-                  <hr />
+                  <hr style={{textDecoration: 'none', color: 'white'}}/>
                   <div className="descriptions" style={{ textAlign: "justify" }}>
                     <p>{description}</p>
                     <div className="project-tags">

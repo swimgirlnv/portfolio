@@ -44,12 +44,12 @@ function Arcana() {
         </div>
 
         <div className="return">
-          <a href="https://majorarcana.net/" target="blank">
-            <button className="button">Explore Project Website</button>
-          </a>
           <Link to="/#Projects">
             <button className="button">Return to Projects</button>
           </Link>
+          <a href="https://majorarcana.net/" target="blank">
+            <button className="button">Explore Project Website</button>
+          </a>
         </div>
       </div>
     </div>

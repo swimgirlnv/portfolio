@@ -109,6 +109,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /* routes.css */
 
@@ -168,3 +169,40 @@
   padding: 20px;
 }
 
+.title { 
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.poster {
+  max-width: 100%; /* Ensures the image fits within the container initially */
+  cursor: pointer;
+  transition: transform 0.3s ease, max-height 0.3s ease;
+}
+
+.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: auto;
+  z-index: 1000; /* Ensure it's above other content */
+  max-height: 90vh; /* Limit to viewport height */
+}
+
+.close-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}

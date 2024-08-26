@@ -24,12 +24,12 @@ function Judge() {
         </div>
 
         <div className="return">
-          <a href="https://devpost.com/software/ai-diving-judge" target="blank">
-            <button className="button">Explore Dev Post</button>
-          </a>
           <Link to="/#Projects">
             <button className="button">Return to Projects</button>
           </Link>
+          <a href="https://devpost.com/software/ai-diving-judge" target="blank">
+            <button className="button">Explore Dev Post</button>
+          </a>
         </div>
       </div>
     </div>

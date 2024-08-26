@@ -77,15 +77,15 @@ function Development() {
         </div>
 
         <div className="return">
+          <Link to="/#Projects">
+            <button className="button">Return to Projects</button>
+          </Link>
           <a
             href="https://drowningdolphin123.github.io/development/"
             target="blank"
           >
             <button className="button">Explore Project Website</button>
           </a>
-          <Link to="/#Projects">
-            <button className="button">Return to Projects</button>
-          </Link>
         </div>
       </div>
     </div>
