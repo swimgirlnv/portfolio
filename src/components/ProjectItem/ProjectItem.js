@@ -13,7 +13,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight, tags 
           <div className='onhover'>
               <div className="center-item">
                 <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
-                  <h3 className='title'><b>{title}</b></h3>
+                  <h3 className='title' style={{color: 'white'}}><b>{title}</b></h3>
                   <hr style={{textDecoration: 'none', color: 'white'}} />
                   <div className="descriptions" style={{ textAlign: "justify" }}>
                     <p>{description}</p>
@@ -43,7 +43,7 @@ function ProjectItem({ title, description, image, projectLink, alignRight, tags 
               </LeftSideBubble>
               <div className="center-item">
                 <div className="text" style={{ textAlign: alignRight ? 'right' : 'left' }}>
-                  <h3 className='title'><b>{title}</b></h3>
+                  <h3 className='title' style={{color: 'white'}}><b>{title}</b></h3>
                   <hr style={{textDecoration: 'none', color: 'white'}}/>
                   <div className="descriptions" style={{ textAlign: "justify" }}>
                     <p>{description}</p>
