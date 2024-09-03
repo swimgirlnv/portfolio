@@ -176,11 +176,19 @@ function Home() {
           </div>
           <div className="item3">
             <ProjectItem
+              title="The Case of the Chocolate Cake"
+              description="Final project for LITR 0110H: Digital and Cross-Disciplinary Arts. Used Twine to create an exciting mystery choose your own adventure story."
+              image="https://i.imgur.com/kra3xHy.png"
+              projectLink="https://t72ctm6c.play.borogove.io/"
+              alignRight={false}
+              tags={["Twine", "Storytelling"]}
+            />
+            <ProjectItem
               title="List Project"
               description="A Literary Arts project that used Figma to allow users to interact with the story and piece it together as they read."
               image="https://i.imgur.com/6Ge9YBY.png"
               projectLink="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545"
-              alignRight={false}
+              alignRight={true}
               tags={["Figma", "Storytelling"]}
             />
             <ProjectItem
@@ -188,7 +196,7 @@ function Home() {
               description="A Literary Arts project that used Figma to create a choose-your-own-adventure game."
               image="https://i.etsystatic.com/6083130/r/il/08ce07/3773221434/il_fullxfull.3773221434_p2vu.jpg"
               projectLink="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
-              alignRight={true}
+              alignRight={false}
               tags={["Figma", "Storytelling"]}
             />
           </div>
@@ -198,7 +206,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, worked through the entire design process by mocking up a solution to a chosen startup's content."
               image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
               projectLink="/Iterative"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "Figma", "Design Process"]}
             />
             <ProjectItem
@@ -206,7 +214,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
               image="https://media.tenor.com/ag9FQlRX11AAAAAM/club-penguin-penguin.gif"
               projectLink="/Development"
-              alignRight={true}
+              alignRight={false}
               tags={["React", "JavaScript"]}
             />
             <ProjectItem
@@ -214,7 +222,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, built a site that showcases the workflow of redesigning a simple website."
               image="https://i.imgur.com/GqtZ1KJ.png"
               projectLink="/Responsive"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "Figma", "Responsive Design"]}
             />
             <ProjectItem
@@ -222,7 +230,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, created two personas based on laundry experiences and illustrated storyboards for the personas."
               image="https://i.imgur.com/5yV8LAU.png"
               projectLink="/Personas"
-              alignRight={true}
+              alignRight={false}
               tags={["HTML", "Figma", "Storytelling"]}
             />
           </div>
