@@ -144,6 +144,14 @@ function Stories() {
       date: '9-1-2022',
       priority: 2
     },
+    {
+      title: 'The Case of the Chocolate Cake',
+      description: 'A choose your own adventure mystery story.',
+      courseTitle: 'LITR 0110H: Digital & Cross-Disciplinary',
+      link: 'https://t72ctm6c.play.borogove.io/',
+      date: '5-15-2022',
+      priority: 2
+    }
   ];
 
   const filteredStories = stories.filter(story =>
