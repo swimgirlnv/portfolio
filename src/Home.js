@@ -126,6 +126,14 @@ function Home() {
               alignRight={false}
               tags={["React", "OpenAI API", "Full Stack Development", "TypeScript", "AWS"]}
             />
+            <ProjectItem
+              title="Digital Introduction"
+              description="An interactive and multi-media introduction to who I am and what I do. Built as a writing sample for ENGL 1050J: Multimedia Storytelling."
+              image="https://i.imgur.com/5NFAZAg.png"
+              projectLink="https://www.figma.com/proto/HBHFK6iz5lqTZyIYLoPnsq/Meet-Becca?node-id=4-20&t=6dOujcc7ejaUenlS-1&starting-point-node-id=4%3A20"
+              alignRight={true}
+              tags={["Figma"]}
+            />
             <div className="projectstitles">
               <hr className="hrl" />
               <h1 className="projecttitle">Class Projects</h1>
@@ -136,7 +144,7 @@ function Home() {
               description="Final project for CSCI 1470: Deep Learning. Re-implemented an AI model that can score dives through video analysis."
               image="https://i.imgur.com/NS82y9C.png"
               projectLink="/Judge"
-              alignRight={true}
+              alignRight={false}
               tags={["Python", "PyTorch", "OpenCV", "Deep Learning"]}
             />
             <ProjectItem
@@ -144,7 +152,7 @@ function Home() {
               description="Final project for CSCI 1951a: Data Science. Analyzed letters sent to Public Utilities Commissions to determine the sentiment of the letters."
               image="https://upload.wikimedia.org/wikipedia/commons/0/0b/Arizona_Corporation_Commission_Seal.png"
               projectLink="/Utilities"
-              alignRight={false}
+              alignRight={true}
               tags={["Python", "Pandas", "Scikit-learn", "Data Analysis"]}
             />
             <ProjectItem
@@ -152,7 +160,7 @@ function Home() {
               description="Final project for CSCI 1230: Computer Graphics. A 3D scene that showcases the use of shaders and textures."
               image="https://i.imgur.com/26aGl0V.png"
               projectLink="/Log"
-              alignRight={true}
+              alignRight={false}
               tags={["C++", "OpenGL", "GLSL", "Three.js"]}
             />
           </div>
@@ -162,7 +170,7 @@ function Home() {
               description="A digital lookbook for the Advanced Screenwriting course at Brown University."
               image="https://i.imgur.com/NPStApd.png"
               projectLink="https://swimgirlnv.github.io/lookbook/"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "GitHub Pages", "Storytelling"]}
             />
             <ProjectItem
@@ -170,7 +178,7 @@ function Home() {
               description="In wanting to create an interactive writing piece, I put some of my budding GitHub Pages skills to the test to create a set of stories for readers to explore."
               image="https://i.imgur.com/Spo00wU.jpg"
               projectLink="https://swimgirlnv.github.io/litr-210-final/"
-              alignRight={true}
+              alignRight={false}
               tags={["GitHub Pages", "Storytelling"]}
             />
           </div>
@@ -180,7 +188,7 @@ function Home() {
               description="Final project for LITR 0110H: Digital and Cross-Disciplinary Arts. Used Twine to create an exciting mystery choose your own adventure story."
               image="https://i.imgur.com/kra3xHy.png"
               projectLink="https://t72ctm6c.play.borogove.io/"
-              alignRight={false}
+              alignRight={true}
               tags={["Twine", "Storytelling"]}
             />
             <ProjectItem
@@ -188,7 +196,7 @@ function Home() {
               description="A Literary Arts project that used Figma to allow users to interact with the story and piece it together as they read."
               image="https://i.imgur.com/6Ge9YBY.png"
               projectLink="https://www.figma.com/proto/zmMDkJBsth7OFl1DPsHjMq/LITR-List-project?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A1545&node-id=5%3A1545"
-              alignRight={true}
+              alignRight={false}
               tags={["Figma", "Storytelling"]}
             />
             <ProjectItem
@@ -196,7 +204,7 @@ function Home() {
               description="A Literary Arts project that used Figma to create a choose-your-own-adventure game."
               image="https://i.etsystatic.com/6083130/r/il/08ce07/3773221434/il_fullxfull.3773221434_p2vu.jpg"
               projectLink="https://www.figma.com/proto/0cPuuSeKmbJJbKmMJ4fNw5/Thayer-Tarot?type=design&node-id=1-2&t=cRoH0cmRKml7Exvj-1&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
-              alignRight={false}
+              alignRight={true}
               tags={["Figma", "Storytelling"]}
             />
           </div>
@@ -206,7 +214,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, worked through the entire design process by mocking up a solution to a chosen startup's content."
               image="https://bookface-images.s3.amazonaws.com/small_logos/d32db90d7196c1ce3567ce75271b6314a38a8b22.png"
               projectLink="/Iterative"
-              alignRight={true}
+              alignRight={false}
               tags={["React", "Figma", "Design Process"]}
             />
             <ProjectItem
@@ -214,7 +222,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, built an application in React to filter, sort, and aggregate a menu of Club Penguin foods."
               image="https://media.tenor.com/ag9FQlRX11AAAAAM/club-penguin-penguin.gif"
               projectLink="/Development"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "JavaScript"]}
             />
             <ProjectItem
@@ -222,7 +230,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, built a site that showcases the workflow of redesigning a simple website."
               image="https://i.imgur.com/GqtZ1KJ.png"
               projectLink="/Responsive"
-              alignRight={true}
+              alignRight={false}
               tags={["React", "Figma", "Responsive Design"]}
             />
             <ProjectItem
@@ -230,7 +238,7 @@ function Home() {
               description="As part of CSCI 1300: UI/UX, created two personas based on laundry experiences and illustrated storyboards for the personas."
               image="https://i.imgur.com/5yV8LAU.png"
               projectLink="/Personas"
-              alignRight={false}
+              alignRight={true}
               tags={["HTML", "Figma", "Storytelling"]}
             />
           </div>
