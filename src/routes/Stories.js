@@ -151,7 +151,21 @@ function Stories() {
       link: 'https://t72ctm6c.play.borogove.io/',
       date: '5-15-2022',
       priority: 2
-    }
+    },
+    {
+      title: 'R U N LLM Proposal',
+      description: 'A proposal for the semester-long project in LITR 1010H: Advanced Digital & Cross-Disciplinary.',
+      courseTitle: 'LITR 1010H: Advanced Digital & Cross-Disciplinary',
+      link: 'https://prezi.com/view/VmdzsjIs66c1oL7HoxPq/',
+      date: '9-16-2024'
+    },
+    // {
+    //   title: 'I Remember... The Dog Yard (Draft 2)',
+    //   description: '25 entries that all begin "I remember". Each entry goes on to remember the same place (my back yard in Lake Tahoe).',
+    //   courseTitle: 'LITR 1110N: Workshop for Potential Literature',
+    //   link: '/DogYard',
+    //   date: '9-13-2024',
+    // }
   ];
 
   const filteredStories = stories.filter(story =>
