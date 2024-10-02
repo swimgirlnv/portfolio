@@ -39,6 +39,8 @@ import CCGPT from "./routes/CCGPT";
 import RevAI from "./routes/RevAI";
 import RevDealRoom from "./routes/RevDealRoom";
 import BearWind from "./stories/bearwind";
+import Untitled from "./stories/untitled";
+import DogYard from "./stories/dogyard";
 
 
 function App() {
@@ -83,6 +85,8 @@ function App() {
           <Route path="/Myths" element={<Myths />} />
           <Route path="/Kiwi" element={<Kiwi />} />
           <Route path="/BearWind" element={<BearWind />} />
+          <Route path="/Untitled" element={<Untitled />} />
+          <Route path="/DogYard" element={<DogYard />} />
 
 
         </Routes>

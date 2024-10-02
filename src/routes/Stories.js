@@ -165,6 +165,13 @@ function Stories() {
       courseTitle: 'LITR 1110N: Workshop for Potential Literature',
       link: '/DogYard',
       date: '9-13-2024',
+    },
+    {
+      title: 'Untitled',
+      description: '1 word appears 20 times, 2 words appear 10 times, 3 words appear 5 times, 5 words appear 3 times, 10 words appear twice, and n words appear once.',
+      courseTitle: 'LITR 1110N: Workshop for Potential Literature',
+      link: '/Untitled',
+      date: '10-1-2024',
     }
   ];
 
