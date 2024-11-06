@@ -2,6 +2,8 @@
 import "./routes.css";
 
 const alligatorDrawings = [
+  { src: 'https://i.imgur.com/J3jLCAL.jpeg', alt: 'Childhood bedroom' },
+  { src: 'https://i.imgur.com/Wcm0hP9.jpeg', alt: 'Childhood bedroom of a bug'},
   { src: 'https://i.imgur.com/4pXynPQ.png', alt: 'Alligator sketch' },
   { src: 'https://i.imgur.com/qjtfzgl.png', alt: "Farmer alligator sketch standing next to tractor. Title 'Aint much but it is honest work'." },
   { src: 'https://i.imgur.com/HzXbXMd.jpg', alt: 'Alligator sketch with pink water wings.' },
@@ -18,6 +20,9 @@ function Gallery() {
   return (
     <div className="gallery-page">
       <div className="gallery-container">
+        <div className="gallery-item">
+          <video src="https://i.imgur.com/hhzksq4.mp4" controls loop className="gallery-image" />
+        </div>
         {alligatorDrawings.map((drawing, index) => (
           <div className="gallery-item" key={index}>
             <img src={drawing.src} alt={drawing.alt} className="gallery-image" />
