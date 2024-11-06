@@ -66,7 +66,7 @@ function Stories() {
     },
     {
       title: 'Hillel',
-      description: 'A short story and relection following the death of a teammate.',
+      description: 'A short story and reflection following the death of a teammate.',
       courseTitle: 'Personal Project',
       link: '/Hillel',
       date: '12-6-2022',
