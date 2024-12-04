@@ -21,6 +21,9 @@ function Gallery() {
     <div className="gallery-page">
       <div className="gallery-container">
         <div className="gallery-item">
+          <video src="https://i.imgur.com/AytyVNP.mp4" controls loop className="gallery-image" />
+        </div>
+        <div className="gallery-item">
           <video src="https://i.imgur.com/hhzksq4.mp4" controls loop className="gallery-image" />
         </div>
         {alligatorDrawings.map((drawing, index) => (

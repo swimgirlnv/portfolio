@@ -140,6 +140,22 @@ function Home() {
               <hr className="hrr" />
             </div>
             <ProjectItem
+              title="ReMemory"
+              description="Final project for ENGL 1050J Multimedia Storytelling. Implemented an interactive map where users can login and add memories attached to Brown University."
+              image="https://i.imgur.com/wjbC06J.png"
+              projectLink='https://rememory-one.vercel.app/'
+              alignRight={false}
+              tags={["React", "Firebase", "Storytelling"]}
+            />
+            <ProjectItem
+              title="RUNLLM"
+              description="Final project for LITR 1010H Advanced Digital & Cross Disiplinary Arts. Wanted to create a game that forces players to question if they are a Large Language Model."
+              image="https://i.imgur.com/jum1LV4.png"
+              projectLink='https://runllm.vercel.app/'
+              alignRight={true}
+              tags={["React", "Firebase", "Storytelling", "OpenAI API", "Three.js"]}
+            />
+            <ProjectItem
               title="AI Diving Judge"
               description="Final project for CSCI 1470: Deep Learning. Re-implemented an AI model that can score dives through video analysis."
               image="https://i.imgur.com/NS82y9C.png"
