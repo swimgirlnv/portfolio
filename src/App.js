@@ -41,6 +41,7 @@ import RevDealRoom from "./routes/RevDealRoom";
 import BearWind from "./stories/bearwind";
 import Untitled from "./stories/untitled";
 import DogYard from "./stories/dogyard";
+import BearNecessiteas from "./routes/BearNecessiteas";
 
 
 function App() {
@@ -67,6 +68,8 @@ function App() {
           <Route path="/Gallery" element={<Gallery />} />
           <Route path ="/RevAI" element={<RevAI />} />
           <Route path="/RevDealRoom" element={<RevDealRoom />} />
+          <Route path="/BearNeccessiteas" element={<BearNecessiteas />} />
+
 
           <Route path="/BearMaiden" element={<BearMaiden />} />
           <Route path="/Dual" element={<Dual />} />
