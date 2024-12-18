@@ -9,8 +9,7 @@ function BearNecessiteas() {
           <h1 className="title">Bear Necessiteas</h1>
           <hr className="hr"></hr>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/OjP4Irq29IQ?si=G33vdS4ZuKPZWRMV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8trizQGcV9s?si=X5rD4eSNJyO-0fDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
           <div className="part">
             <h3>Project Overview</h3>
