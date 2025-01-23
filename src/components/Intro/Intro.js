@@ -16,9 +16,9 @@ const Intro = () => {
               <p className="andale">Hello World!</p>
               <br></br>
               <p>
-                I am currently a Senior at Brown University and pursuing a
-                double concentration in Computer Science and Literary Arts. I am
-                also a coder, storyteller, doodler, and D1 college swimmer.
+                I am a recent graduate from Brown University with a
+                double concentration in Computer Science and Literary Arts under my belt. I am
+                a coder, storyteller, doodler, and former D1 college swimmer.
               </p>
               <br></br>
               <p>

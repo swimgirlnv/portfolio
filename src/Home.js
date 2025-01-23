@@ -148,7 +148,7 @@ function Home() {
               image="https://i.imgur.com/5NFAZAg.png"
               projectLink="https://www.figma.com/proto/HBHFK6iz5lqTZyIYLoPnsq/Meet-Becca?node-id=4-20&t=6dOujcc7ejaUenlS-1&starting-point-node-id=4%3A20"
               alignRight={true}
-              tags={["Figma"]}
+              tags={["Figma", 'Storytelling', 'Interactive Design', 'Drawing']}
             />
             <div className="projectstitles">
               <hr className="hrl" />
@@ -169,7 +169,7 @@ function Home() {
               image="https://i.imgur.com/SFpUzCh.png"
               projectLink='/BearNeccessiteas'
               alignRight={true}
-              tags={["Maya + Arnold", "Adobe Premiere Pro", "Storytelling"]}
+              tags={["Maya + Arnold", "Adobe Premiere Pro", "Storytelling", '3D Modeling', 'Animation']}
             />
             <ProjectItem
               title="RUNLLM"
