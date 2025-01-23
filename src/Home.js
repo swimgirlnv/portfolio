@@ -81,11 +81,19 @@ function Home() {
               tags={["Front-End Development", "React", "Redux", "TypeScript", "Responsive Web Design"]}
             />
             <ProjectItem
+              title='Black Diamond Velvet Rope Series'
+              description='Commissioned to re-design the Black Diamond Velvet Rope Series website to be more user-friendly, visually appealing, and fresh. Worked closely with author JC Conrad Ellis to ensure the website met her vision.'
+              image='https://i.imgur.com/DsWKeob.png'
+              projectLink='https://ellis-site.vercel.app/'
+              alignRight={false}
+              tags={["Web Design", "Web Development", "API Integration", 'React', 'TypeScript', 'Vercel', 'Firebase']}
+            />
+            <ProjectItem
               title="Hypertext & Hypermedia Course Website"
               description="Designed and built the class website for the CSCI 1951v: Hypertext & Hypermedia course at Brown University."
               image="https://i.imgur.com/OHedLbC.png"
               projectLink="https://cs1951v-2023.vercel.app/"
-              alignRight={false}
+              alignRight={true}
               tags={["React", "Next.js", "Vercel"]}
             />
             <div className="projectstitles">
@@ -98,7 +106,7 @@ function Home() {
               description="A playful exploration of using GPT3's text-davinci-003 to generate a reading based on the random tarot cards users uncover."
               image="https://i.imgur.com/5hzflr1.png"
               projectLink="/Arcana"
-              alignRight={true}
+              alignRight={false}
               tags={["React", "OpenAI API", "Full Stack Development", "Java", "TypeScript"]}
             />
             <ProjectItem
@@ -107,8 +115,16 @@ function Home() {
               This application is designed to help others who struggle with the same problem. Features currently include getting suggestions for restaurants near the user or recipes generated through OpenAI, adding your own suggestions, and saving suggestions and restaurants to favorites."
               image='https://i.imgur.com/QGAwrz6.png'
               projectLink='https://pick-my-dinner.vercel.app/'
-              alignRight={false}
+              alignRight={true}
               tags={["React", "OpenAI API", "GooglePlaces API", "Full Stack Development", "Vercel", "TypeScript"]}
+            />
+            <ProjectItem
+              title='Formula 1 Fan Site'
+              description='A fan site for Formula 1 that allows users to view the current and past season standings, as well as predict future season champions.'
+              image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdzJvmWjvfc6iglTDuLMZRZUzPZbSLL0JfBw&s'
+              projectLink='https://f1-fan-alpha.vercel.app/'
+              alignRight={false}
+              tags={["React", "Vercel", "TypeScript", 'Python', 'Machine Learning', "API Integration"]}
             />
             <ProjectItem
               title="Witchy Warthog"
