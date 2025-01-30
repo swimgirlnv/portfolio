@@ -84,7 +84,7 @@ function Home() {
               title='Black Diamond Velvet Rope Series'
               description='Commissioned to re-design the Black Diamond Velvet Rope Series website to be more user-friendly, visually appealing, and fresh. Worked closely with author JC Conrad Ellis to ensure the website met her vision.'
               image='https://i.imgur.com/DsWKeob.png'
-              projectLink='https://ellis-site.vercel.app/'
+              projectLink='/ellis-site'
               alignRight={false}
               tags={["Web Design", "Web Development", "API Integration", 'React', 'TypeScript', 'Vercel', 'Firebase']}
             />

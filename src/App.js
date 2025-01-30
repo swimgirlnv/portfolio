@@ -42,6 +42,7 @@ import BearWind from "./stories/bearwind";
 import Untitled from "./stories/untitled";
 import DogYard from "./stories/dogyard";
 import BearNecessiteas from "./routes/BearNecessiteas";
+import EllisSite from "./routes/EllisSite";
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
           <Route path ="/RevAI" element={<RevAI />} />
           <Route path="/RevDealRoom" element={<RevDealRoom />} />
           <Route path="/BearNeccessiteas" element={<BearNecessiteas />} />
+          <Route path='/ellis-site' element={<EllisSite />} />
 
 
           <Route path="/BearMaiden" element={<BearMaiden />} />
