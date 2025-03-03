@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileLines } from '@fortawesome/free-solid-svg-icons';
+import { faFileLines, faPenNib } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 import './buttoncontainer.css';
 const ButtonContainer = () => {
@@ -27,12 +27,19 @@ const ButtonContainer = () => {
         <p style={{ paddingRight: '10px' }}>GitHub</p>
         <FontAwesomeIcon icon={faGithubSquare} style={{ color: '#000000' }} className="icon" />
       </button>
-      <button
+      {/* <button
         className="important-button"
         onClick={() => window.open('https://www.instagram.com/thesketchy.sketches/', '_blank')}
       >
         <p style={{ paddingRight: '10px' }}>Instagram</p>
         <FontAwesomeIcon icon={faInstagramSquare} style={{ color: '#000000' }} className="icon" />
+      </button> */}
+      <button
+        className="important-button"
+        onClick={() => window.open('https://rwaterso.vercel.app/', '_blank')}
+      >
+        <p style={{ paddingRight: '10px' }}>Blog</p>
+        <FontAwesomeIcon icon={faPenNib} style={{ color: '#000000' }} className="icon" />
       </button>
     </div>
   );
