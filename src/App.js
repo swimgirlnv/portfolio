@@ -43,6 +43,7 @@ import Untitled from "./stories/untitled";
 import DogYard from "./stories/dogyard";
 import BearNecessiteas from "./routes/BearNecessiteas";
 import EllisSite from "./routes/EllisSite";
+import Practice from "./stories/practice";
 
 
 function App() {
@@ -92,6 +93,7 @@ function App() {
           <Route path="/BearWind" element={<BearWind />} />
           <Route path="/Untitled" element={<Untitled />} />
           <Route path="/DogYard" element={<DogYard />} />
+          <Route path="/Practice" element={<Practice />} />
 
 
         </Routes>

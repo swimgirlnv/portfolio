@@ -172,6 +172,13 @@ function Stories() {
       courseTitle: 'LITR 1110N: Workshop for Potential Literature',
       link: '/Untitled',
       date: '10-1-2024',
+    },
+    {
+      title: 'No Good, Very Bad Practice',
+      description: 'A short story about a swim practice infiltrated by Norse gods.',
+      courseTitle: 'LITR 0110A: Fiction I',
+      link: '/Practice',
+      date: '10-25-2021',
     }
   ];
 
