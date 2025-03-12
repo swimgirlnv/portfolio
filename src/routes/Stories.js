@@ -214,11 +214,11 @@ function Stories() {
             </div>
             <div className="link-item">
               <a
-                href="https://www.scdsoctagon.com/author/rebecca-waterson/"
+                href="https://rwaterso.vercel.app/blog"
                 target="_blank" rel="noopener noreferrer"
               >
                 <img
-                  src="https://i0.wp.com/www.scdsoctagon.com/wp-content/uploads/2020/06/cropped-octagon-round-logo.png?fit=512%2C512&ssl=1"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDipdfJoNun68DCzbb0IGCbIZOjiBu7a7URg&s"
                   width="100px"
                   alt="SCDS Octagon Logo"
                 ></img>
