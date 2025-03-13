@@ -1,4 +1,4 @@
-name: Node.js CI & Update README
+name: Node.js CI & Update README & Tarot Reading
 
 env:
   CI: ""
@@ -47,20 +47,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Update Blog Posts
-        uses: gautamkrishnar/blog-post-workflow@v1
-        with:
-          feed_list: "https://rwaterso.vercel.app/blog/rss.xml"
-
-      - name: Update Random Quote
+      - name: Update Tarot Reading
         run: |
-          QUOTE=$(curl -s https://api.quotable.io/random | jq -r '.content + " - " + .author')
-          sed -i "s|> \"This space for a dynamically updated quote!\"|> \"$QUOTE\"|g" README.md
+          TAROT_CARDS=$(curl -s https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3 | jq -r '[.cards[].name] | join(", ")')
+          INTERPRETATION=$(curl -s -X POST "https://api.openai.com/v1/completions" \
+            -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{"model": "text-davinci-003", "prompt": "Interpret these tarot cards in a mystical and engaging way: '$TAROT_CARDS'", "max_tokens": 100}')
+          sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_CARDS**\n\n**AI Interpretation:** *$(echo $INTERPRETATION | jq -r '.choices[0].text')*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add README.md
-          git commit -m "🔄 Auto-update README with latest content" || echo "No changes to commit"
+          git commit -m "🔮 Auto-update README with daily tarot reading" || echo "No changes to commit"
           git push

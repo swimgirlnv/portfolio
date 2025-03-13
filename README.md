@@ -15,15 +15,8 @@ I'm a **software engineer & writer** with a passion for building interactive web
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-
----
-
-## 🔥 GitHub Stats & Activity
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=swimgirlnv&theme=tokyonight" alt="Streak Stats" />
-  <br />
-  <img src="https://github-readme-stats.vercel.app/api?username=swimgirlnv&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-</div>
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=flat&logo=leaflet&logoColor=white)
 
 ---
 
@@ -32,6 +25,18 @@ I'm a **software engineer & writer** with a passion for building interactive web
 - 🏗 [R U N LLM](https://github.com/swimgirlnv/runllm) - A puzzle-based AI-driven narrative game
 - ✍️ [Beeble & Bot](https://github.com/swimgirlnv/beeblebot) - A literary experiment in hypertext storytelling
 - 🏎️ [F1 Fan Site](https://github.com/swimgirlnv/f1-site) - An interactive hub for Formula 1 enthusiasts
+
+---
+
+## 🔮 Daily Tarot Reading
+**Today's Cards:**
+- 🃏 **The Fool** - A journey begins with boundless potential.
+- 🃏 **The Tower** - Sudden upheaval, transformation in motion.
+- 🃏 **The High Priestess** - Hidden knowledge, trust your intuition.
+
+**AI Interpretation:** *Change is on the horizon. While the Fool urges you to embrace new opportunities, the Tower warns of unexpected shifts. The High Priestess advises looking inward for wisdom—trust yourself as you navigate what's ahead.*
+
+*(This section updates daily via GitHub Actions!)*
 
 ---
 
@@ -47,3 +52,7 @@ I'm a **software engineer & writer** with a passion for building interactive web
 - 🔗 [Portfolio](https://rwaterso.vercel.app)
 - 💼 [LinkedIn](https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/)
 - 📬 [Email](mailto:rebeccaqwaterson@gmail.com)
+
+---
+
+✨ *Not all those who wander are lost, but I do have a map just in case.* ✨
