@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: ["becca/3684"]
   schedule:
-    - cron: "0 * * * *"  # Runs every hour
+    - cron: "0 0 * * *"  # Runs once a day
   workflow_dispatch:
 
 jobs:
@@ -49,12 +49,19 @@ jobs:
 
       - name: Update Tarot Reading
         run: |
-          TAROT_CARDS=$(curl -s https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3 | jq -r '[.cards[].name] | join(", ")')
+          TAROT_API="https://tarot-api.sofiane.dev/cards/random?n=3"
+          TAROT_RESPONSE=$(curl -s "$TAROT_API" || echo "error")
+          if [[ "$TAROT_RESPONSE" == "error" || -z "$TAROT_RESPONSE" ]]; then
+            TAROT_CARDS="The Fool, The Magician, The High Priestess"
+          else
+            TAROT_CARDS=$(echo "$TAROT_RESPONSE" | jq -r '[.cards[].name] | join(", ")')
+          fi
           INTERPRETATION=$(curl -s -X POST "https://api.openai.com/v1/completions" \
             -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
             -H "Content-Type: application/json" \
             -d '{"model": "text-davinci-003", "prompt": "Interpret these tarot cards in a mystical and engaging way: '$TAROT_CARDS'", "max_tokens": 100}')
-          sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_CARDS**\n\n**AI Interpretation:** *$(echo $INTERPRETATION | jq -r '.choices[0].text')*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
+          INTERPRETATION_TEXT=$(echo "$INTERPRETATION" | jq -r '.choices[0].text' | sed 's/"/\"/g')
+          sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_CARDS**\n\n**AI Interpretation:** *$INTERPRETATION_TEXT*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
 
       - name: Commit and Push Changes
         run: |
