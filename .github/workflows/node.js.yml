@@ -1,7 +1,5 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+name: Node.js CI & Update README
 
-name: Node.js CI
 env:
   CI: ""
 
@@ -10,6 +8,9 @@ on:
     branches: ["becca/3684", "workflow"]
   pull_request:
     branches: ["becca/3684"]
+  schedule:
+    - cron: "0 * * * *"  # Runs every hour
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,7 +19,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v3
@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      # change "homepage" in package.json with current repository name
       - run: touch repository.txt
       - run: echo ${{ github.repository }} >> repository.txt
       - run: sed -i 's/.*\///' repository.txt
@@ -41,3 +40,27 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Update Blog Posts
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://rwaterso.vercel.app/blog/rss.xml"
+
+      - name: Update Random Quote
+        run: |
+          QUOTE=$(curl -s https://api.quotable.io/random | jq -r '.content + " - " + .author')
+          sed -i "s|> \"This space for a dynamically updated quote!\"|> \"$QUOTE\"|g" README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "🔄 Auto-update README with latest content" || echo "No changes to commit"
+          git push
