@@ -47,21 +47,38 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Update Tarot Reading
+      - name: Generate Random Tarot Reading
         run: |
-          TAROT_API="https://tarot-api.sofiane.dev/cards/random?n=3"
-          TAROT_RESPONSE=$(curl -s "$TAROT_API" || echo "error")
-          if [[ "$TAROT_RESPONSE" == "error" || -z "$TAROT_RESPONSE" ]]; then
-            TAROT_CARDS="The Fool, The Magician, The High Priestess"
-          else
-            TAROT_CARDS=$(echo "$TAROT_RESPONSE" | jq -r '[.cards[].name] | join(", ")')
-          fi
+          TAROT_CARDS=(
+            "The Fool" "The Magician" "The High Priestess" "The Empress" "The Emperor"
+            "The Hierophant" "The Lovers" "The Chariot" "Strength" "The Hermit"
+            "Wheel of Fortune" "Justice" "The Hanged Man" "Death" "Temperance"
+            "The Devil" "The Tower" "The Star" "The Moon" "The Sun"
+            "Judgement" "The World"
+            "Ace of Swords" "Two of Swords" "Three of Swords" "Four of Swords" "Five of Swords"
+            "Six of Swords" "Seven of Swords" "Eight of Swords" "Nine of Swords" "Ten of Swords"
+            "Page of Swords" "Knight of Swords" "Queen of Swords" "King of Swords"
+            "Ace of Pentacles" "Two of Pentacles" "Three of Pentacles" "Four of Pentacles" "Five of Pentacles"
+            "Six of Pentacles" "Seven of Pentacles" "Eight of Pentacles" "Nine of Pentacles" "Ten of Pentacles"
+            "Page of Pentacles" "Knight of Pentacles" "Queen of Pentacles" "King of Pentacles"
+            "Ace of Wands" "Two of Wands" "Three of Wands" "Four of Wands" "Five of Wands"
+            "Six of Wands" "Seven of Wands" "Eight of Wands" "Nine of Wands" "Ten of Wands"
+            "Page of Wands" "Knight of Wands" "Queen of Wands" "King of Wands"
+            "Ace of Cups" "Two of Cups" "Three of Cups" "Four of Cups" "Five of Cups"
+            "Six of Cups" "Seven of Cups" "Eight of Cups" "Nine of Cups" "Ten of Cups"
+            "Page of Cups" "Knight of Cups" "Queen of Cups" "King of Cups"
+          )
+          CARD1=${TAROT_CARDS[$RANDOM % ${#TAROT_CARDS[@]}]}
+          CARD2=${TAROT_CARDS[$RANDOM % ${#TAROT_CARDS[@]}]}
+          CARD3=${TAROT_CARDS[$RANDOM % ${#TAROT_CARDS[@]}]}
+          TAROT_READING="$CARD1, $CARD2, $CARD3"
+
           INTERPRETATION=$(curl -s -X POST "https://api.openai.com/v1/completions" \
             -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d '{"model": "text-davinci-003", "prompt": "Interpret these tarot cards in a mystical and engaging way: '$TAROT_CARDS'", "max_tokens": 100}')
+            -d '{"model": "text-davinci-003", "prompt": "Interpret these tarot cards in a mystical and engaging way: '$TAROT_READING'", "max_tokens": 100}')
           INTERPRETATION_TEXT=$(echo "$INTERPRETATION" | jq -r '.choices[0].text' | sed 's/"/\"/g')
-          sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_CARDS**\n\n**AI Interpretation:** *$INTERPRETATION_TEXT*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
+          sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_READING**\n\n**AI Interpretation:** *$INTERPRETATION_TEXT*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
 
       - name: Commit and Push Changes
         run: |
