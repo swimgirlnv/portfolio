@@ -47,6 +47,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Debug OpenAI API Key
+        run: |
+          if [ -z "${{ secrets.OPENAI_API_KEY }}" ]; then
+            echo "❌ ERROR: OPENAI_API_KEY is missing."
+            exit 1
+          else
+            echo "✅ OpenAI API Key is set."
+          fi
+
       - name: Generate Random Tarot Reading
         run: |
           TAROT_CARDS=(
@@ -74,10 +83,14 @@ jobs:
           CARD3=${TAROT_CARDS[$((RANDOM % ${#TAROT_CARDS[@]}))]}
           TAROT_READING="$CARD1, $CARD2, $CARD3"
           
+          echo "🎴 Selected Cards: $TAROT_READING"
+          
           RESPONSE=$(curl -s -X POST "https://api.openai.com/v1/completions" \
             -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
             -H "Content-Type: application/json" \
             -d '{"model": "text-davinci-003", "prompt": "Interpret these tarot cards in a mystical and engaging way: '$TAROT_READING'", "max_tokens": 100}')
+          
+          echo "📝 OpenAI Raw Response: $RESPONSE"
           
           if echo "$RESPONSE" | jq -e . >/dev/null 2>&1; then
             INTERPRETATION_TEXT=$(echo "$RESPONSE" | jq -r '.choices[0].text' | sed 's/"/\"/g')
