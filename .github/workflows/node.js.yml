@@ -49,7 +49,7 @@ jobs:
 
       - name: Generate Random Tarot Reading
         run: |
-          TAROT_CARDS=(
+          declare -a TAROT_CARDS=(
             "The Fool" "The Magician" "The High Priestess" "The Empress" "The Emperor"
             "The Hierophant" "The Lovers" "The Chariot" "Strength" "The Hermit"
             "Wheel of Fortune" "Justice" "The Hanged Man" "Death" "Temperance"
@@ -68,16 +68,23 @@ jobs:
             "Six of Cups" "Seven of Cups" "Eight of Cups" "Nine of Cups" "Ten of Cups"
             "Page of Cups" "Knight of Cups" "Queen of Cups" "King of Cups"
           )
-          CARD1=${TAROT_CARDS[$RANDOM % ${#TAROT_CARDS[@]}]}
-          CARD2=${TAROT_CARDS[$RANDOM % ${#TAROT_CARDS[@]}]}
-          CARD3=${TAROT_CARDS[$RANDOM % ${#TAROT_CARDS[@]}]}
+          
+          CARD1=${TAROT_CARDS[$((RANDOM % ${#TAROT_CARDS[@]}))]}
+          CARD2=${TAROT_CARDS[$((RANDOM % ${#TAROT_CARDS[@]}))]}
+          CARD3=${TAROT_CARDS[$((RANDOM % ${#TAROT_CARDS[@]}))]}
           TAROT_READING="$CARD1, $CARD2, $CARD3"
-
+          
           INTERPRETATION=$(curl -s -X POST "https://api.openai.com/v1/completions" \
             -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
             -H "Content-Type: application/json" \
             -d '{"model": "text-davinci-003", "prompt": "Interpret these tarot cards in a mystical and engaging way: '$TAROT_READING'", "max_tokens": 100}')
-          INTERPRETATION_TEXT=$(echo "$INTERPRETATION" | jq -r '.choices[0].text' | sed 's/"/\"/g')
+          
+          if [[ -z "$INTERPRETATION" ]]; then
+            INTERPRETATION_TEXT="The future is unclear. Trust yourself."
+          else
+            INTERPRETATION_TEXT=$(echo "$INTERPRETATION" | jq -r '.choices[0].text' | sed 's/"/\"/g')
+          fi
+          
           sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_READING**\n\n**AI Interpretation:** *$INTERPRETATION_TEXT*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
 
       - name: Commit and Push Changes
