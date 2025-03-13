@@ -1,15 +1,20 @@
 # Hi there! 👋 I'm Becca 🌿
 
-![GitHub Banner](https://your-banner-image-link.com)
-
 ## 🚀 About Me
 I'm a **software engineer & writer** with a passion for building interactive web experiences, AI-driven tools, and storytelling through technology. I love working with **React, TypeScript, Firebase, and AI** to create meaningful digital experiences.
 
 - 🌱 Exploring AI, creative coding, and interactive storytelling
 - ✨ Passionate about game dev, frontend magic, and writing compelling narratives
+- 📌 Mapping memories with a location-based storytelling app
 - 🎮 Building an AI-driven game (*R U N LLM*) & a magical tarot app
 - 🏎️ Developing an interactive Formula 1 fan site
-- 📌 Mapping memories with a location-based storytelling app
+
+---
+
+## 🚀 Tech Stack
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
 
 ---
 
@@ -23,39 +28,22 @@ I'm a **software engineer & writer** with a passion for building interactive web
 ---
 
 ## 🎭 Featured Projects
-- 🏗 [R U N LLM](https://github.com/swimgirlnv/run-llm) - A puzzle-based AI-driven narrative game
-- 🎮 [Magic Game](https://github.com/swimgirlnv/magic-game) - A multiplayer web game inspired by *Lizard Wizard*
-- ✍️ [Beeble & Bot](https://github.com/swimgirlnv/beeble-bot) - A literary experiment in hypertext storytelling
-- 🏎️ [F1 Fan Site](https://github.com/swimgirlnv/f1-fan-site) - An interactive hub for Formula 1 enthusiasts
-- 🗺️ [Re-Memory Map](https://github.com/swimgirlnv/re-memory-map) - A personal storytelling map of meaningful places
+- 🗺️ [Re-Memory Map](https://github.com/swimgirlnv/rememory) - A personal storytelling map of meaningful places
+- 🏗 [R U N LLM](https://github.com/swimgirlnv/runllm) - A puzzle-based AI-driven narrative game
+- ✍️ [Beeble & Bot](https://github.com/swimgirlnv/beeblebot) - A literary experiment in hypertext storytelling
+- 🏎️ [F1 Fan Site](https://github.com/swimgirlnv/f1-site) - An interactive hub for Formula 1 enthusiasts
 
 ---
 
 ## 📖 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
-- [Your Latest Blog Post Title](https://rwaterso.vercel.app/blog/post1)
-- [Another Cool Blog Post](https://rwaterso.vercel.app/blog/post2)
+- [The Nowhere Between](https://rwaterso.vercel.app/blog/3UcDZpzgJ0ZMsbBVR34q)
+- [Three Weeks Left](https://rwaterso.vercel.app/blog/oHeE8RNtRvbJtXKZLJhY)
 <!-- BLOG-POST-LIST:END -->
-
-*(Updated automatically with GitHub Actions)*
-
----
-
-## 📜 Random Quote of the Day
-> "This space for a dynamically updated quote!"
 
 ---
 
 ## 🌍 Where to Find Me
 - 🔗 [Portfolio](https://rwaterso.vercel.app)
-- 💼 [LinkedIn](https://linkedin.com/in/rebeccawaters)
-- 📬 [Email](mailto:your@email.com)
-
----
-
-### 🔄 Auto Updates
-This README updates automatically using GitHub Actions! ✨ Stay tuned for fresh content.
-
----
-
-*Built with 💚 and a touch of automation.*
+- 💼 [LinkedIn](https://www.linkedin.com/in/rebecca-waterson-b3b95b21a/)
+- 📬 [Email](mailto:rebeccaqwaterson@gmail.com)
