@@ -47,15 +47,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Debug OpenAI API Key
-        run: |
-          if [ -z "${{ secrets.OPENAI_API_KEY }}" ]; then
-            echo "❌ ERROR: OPENAI_API_KEY is missing."
-            exit 1
-          else
-            echo "✅ OpenAI API Key is set."
-          fi
-
       - name: Generate Random Tarot Reading
         run: |
           TAROT_CARDS=(
@@ -92,13 +83,19 @@ jobs:
           
           echo "📝 OpenAI Raw Response: $RESPONSE"
           
-          if echo "$RESPONSE" | jq -e . >/dev/null 2>&1; then
-            INTERPRETATION_TEXT=$(echo "$RESPONSE" | jq -r '.choices[0].text' | sed 's/"/\"/g')
-          else
+          if [ -z "$RESPONSE" ] || ! echo "$RESPONSE" | jq -e . >/dev/null 2>&1; then
+            echo "❌ ERROR: OpenAI response is empty or invalid. Using default interpretation."
             INTERPRETATION_TEXT="The future is unclear. Trust yourself."
+          else
+            INTERPRETATION_TEXT=$(echo "$RESPONSE" | jq -r '.choices[0].text' | sed 's/"/\"/g')
           fi
           
-          sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_READING**\n\n**AI Interpretation:** *$INTERPRETATION_TEXT*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
+          if grep -q "## 🔮 Daily Tarot Reading" README.md; then
+            sed -i "s|## 🔮 Daily Tarot Reading.*|## 🔮 Daily Tarot Reading\n**Today's Cards:**\n- 🃏 **$TAROT_READING**\n\n**AI Interpretation:** *$INTERPRETATION_TEXT*\n\n*(This section updates daily via GitHub Actions!)*|g" README.md
+          else
+            echo "❌ ERROR: Could not find tarot section in README.md"
+            exit 1
+          fi
 
       - name: Commit and Push Changes
         run: |
